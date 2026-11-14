@@ -1,0 +1,124 @@
+
+# 📚 KELOMPOK 1
+## Dokumentasi Tugas Kelompok – Teknik Informatika
+
+<p align="center">
+  <b>UNIVERSITAS PAMULANG</b><br>
+  Program Studi Teknik Informatika
+</p>
+
+---
+
+## 👥 Anggota Kelompok
+
+Berikut merupakan daftar anggota Kelompok 1:
+
+| No. | Nama Anggota | NIM |
+|:---:|---|:---:|
+| 1 | Abdul Kholik | 231011400097 |
+| 2 | Ahmad Reza | 231011403385 |
+| 3 | Akbar Rusmanto | 231011401424 |
+| 4 | Adjie Febrianto | 231011400092 |
+
+**Jumlah Anggota:** 4 Mahasiswa
+
+---
+
+## 📖 Tentang Kelompok
+
+Kelompok 1 merupakan kelompok mahasiswa Program Studi Teknik Informatika Universitas Pamulang yang dibentuk untuk melaksanakan kegiatan pembelajaran, diskusi, pengerjaan tugas, serta penyelesaian proyek kelompok selama perkuliahan.
+
+Repository GitHub ini digunakan sebagai media penyimpanan, dokumentasi, dan pengelolaan seluruh hasil pekerjaan kelompok agar lebih terstruktur, mudah diakses, dan dapat dikembangkan bersama.
+
+## 🎯 Tujuan
+
+Adapun tujuan pembentukan kelompok dan penggunaan repository ini adalah:
+
+1. Menyelesaikan tugas perkuliahan secara kolaboratif.
+2. Meningkatkan kemampuan bekerja sama dalam tim.
+3. Mengembangkan kemampuan analisis dan pemecahan masalah.
+4. Menerapkan ilmu yang telah dipelajari selama perkuliahan.
+5. Memanfaatkan GitHub sebagai media dokumentasi dan penyimpanan proyek.
+6. Meningkatkan kemampuan komunikasi dan tanggung jawab setiap anggota.
+
+## 💻 Teknologi dan Tools
+
+Berikut beberapa tools yang dapat digunakan dalam pengerjaan tugas kelompok:
+
+| No. | Tools | Kegunaan |
+|:---:|---|---|
+| 1 | GitHub | Penyimpanan dan kolaborasi proyek |
+| 2 | Visual Studio Code | Editor kode program |
+| 3 | Microsoft Office | Pembuatan dokumen dan laporan |
+| 4 | Google Drive | Berbagi dan menyimpan dokumen |
+| 5 | Browser | Pengujian dan pencarian referensi |
+
+## 📂 Struktur Repository
+
+```text
+KELOMPOK-1/
+│
+├── README.md
+│
+├── Dokumentasi/
+│   └── Dokumentasi kegiatan kelompok
+│
+├── Tugas/
+│   └── File tugas perkuliahan
+│
+├── Laporan/
+│   └── Laporan hasil pengerjaan
+│
+└── Referensi/
+    └── Materi dan sumber referensi
+```
+
+## 🤝 Pembagian Tanggung Jawab
+
+Setiap anggota kelompok memiliki tanggung jawab untuk:
+
+- Berpartisipasi aktif dalam diskusi kelompok.
+- Mengerjakan bagian tugas sesuai kesepakatan bersama.
+- Melakukan pengecekan terhadap hasil pekerjaan.
+- Membantu anggota lain apabila mengalami kendala.
+- Menjaga komunikasi dan koordinasi selama pengerjaan tugas.
+- Memastikan hasil akhir tugas tersusun dengan baik.
+
+## 📌 Aturan Kerja Kelompok
+
+Untuk menjaga kelancaran pengerjaan tugas, seluruh anggota diharapkan:
+
+1. Bertanggung jawab terhadap tugas masing-masing.
+2. Menghargai pendapat dan masukan anggota lain.
+3. Menyelesaikan pekerjaan sesuai tenggat waktu.
+4. Melakukan koordinasi sebelum mengubah hasil pekerjaan bersama.
+5. Menjaga kualitas dan keaslian hasil tugas.
+
+## 📑 Dokumentasi dan Hasil Pengerjaan
+
+Seluruh hasil kegiatan kelompok akan didokumentasikan melalui repository ini, meliputi:
+
+- Materi pembelajaran.
+- File tugas individu maupun kelompok.
+- Hasil diskusi.
+- Laporan pengerjaan.
+- Dokumentasi proyek.
+- Hasil akhir tugas perkuliahan.
+
+## 🌟 Penutup
+
+Melalui kerja sama dan kolaborasi Kelompok 1, diharapkan seluruh anggota dapat meningkatkan pengetahuan, keterampilan, serta pengalaman dalam bidang Teknik Informatika.
+
+Repository ini menjadi salah satu bentuk dokumentasi perjalanan pembelajaran dan hasil kolaborasi mahasiswa Kelompok 1 Universitas Pamulang.
+
+---
+
+<p align="center">
+  <b>KELOMPOK 1 – TEKNIK INFORMATIKA</b><br>
+  Universitas Pamulang<br><br>
+  <i>Learn Together, Build Together, Grow Together.</i>
+</p>
+
+---
+
+**© 2026 Kelompok 1 – Universitas Pamulang**
