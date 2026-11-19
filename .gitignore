@@ -1,0 +1,9 @@
+# Data pribadi / bukti mentah internal
+private/
+*.log
+.DS_Store
+Thumbs.db
+~$*.xlsx
+# Dokumen standar berlisensi jangan dipublikasikan
+ISO_IEC_25002_2024*.pdf
+*ISO*25002*2024*.pdf
