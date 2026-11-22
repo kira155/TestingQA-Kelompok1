@@ -1,4 +1,4 @@
-# Pengujian Website Bafageh Bakery
+# Pengujian Website Cleaning Service System
 
 **Tugas Kelompok 1 – Testing & Quality Assurance**  
 Program Studi Teknik Informatika, Universitas Pamulang
@@ -14,24 +14,36 @@ Program Studi Teknik Informatika, Universitas Pamulang
 
 ## Objek pengujian
 
-Kami memilih website [Bafageh Bakery](https://bakery.bafageh.com/) sebagai objek tugas. Website ini digunakan untuk mengenalkan produk bakery serta menyediakan informasi dan formulir permintaan pesanan.
+Objek pengujian pada tugas ini adalah Cleaning Service System, yaitu aplikasi berbasis web yang digunakan sebagai sistem layanan cleaning service.
 
-Pengujian difokuskan pada fitur yang dapat diakses pengunjung, seperti menu navigasi, katalog produk, galeri, dan formulir pemesanan. Kami tidak memiliki akses ke kode program maupun database website.
+Website: https://axioo-production.my.id/cleaning/auth/login.php
+
+Pengujian dilakukan berdasarkan fitur yang dapat diakses melalui browser tanpa menggunakan source code maupun akses database aplikasi.
 
 ## Tujuan
 
-Tujuan pengujian ini adalah mengetahui apakah fitur utama website dapat digunakan sesuai kebutuhan pengunjung. Selain fungsi website, kami juga memperhatikan kemudahan penggunaan, tampilan pada perangkat yang berbeda, dan waktu respons halaman.
+Tujuan pengujian ini adalah memastikan fitur-fitur pada website Cleaning Service System berjalan sesuai dengan fungsinya, mengetahui kemungkinan kesalahan sistem, serta mengevaluasi kualitas dan kemudahan penggunaan aplikasi.
 
 ## Metode yang digunakan
 
-Pengujian dilakukan secara **manual** dengan pendekatan **Black Box Testing**. Kami menyiapkan skenario berdasarkan cara pengguna berinteraksi dengan website, kemudian membandingkan hasil yang diharapkan dengan hasil yang benar-benar muncul.
+Pengujian menggunakan dua metode, yaitu Black Box Testing dan White Box Testing.
+
+Black Box Testing merupakan pengujian perangkat lunak yang berfokus pada fungsi aplikasi berdasarkan input dan output tanpa memeriksa struktur kode program. Pengujian dilakukan untuk memastikan setiap fitur berjalan sesuai dengan kebutuhan.
+
+White Box Testing merupakan pengujian perangkat lunak yang berfokus pada struktur internal dan alur kode program. Pengujian dilakukan dengan memeriksa logika program, kondisi, percabangan, serta jalur eksekusi kode.
 
 Teknik yang digunakan pada skenario tertentu meliputi:
 
-- **Positive testing:** mencoba fitur dengan masukan yang sesuai.
-- **Negative testing:** mencoba masukan yang salah atau tidak lengkap.
-- **Equivalence Partitioning:** mengelompokkan contoh masukan valid dan tidak valid.
-- **Boundary Value Analysis:** memeriksa nilai di sekitar batas masukan yang ditentukan.
+Black Box Testing:
+Positive Testing
+Negative Testing
+Equivalence Partitioning
+Boundary Value Analysis
+
+White Box Testing:
+Statement Coverage
+Branch Coverage
+Path Testing
 
 Acuan kualitas yang digunakan adalah **ISO/IEC 25002:2024**, khususnya pemilihan aspek kualitas, penentuan kebutuhan, serta evaluasi hasil. Standar ini menjadi kerangka penilaian kualitas, bukan panduan khusus untuk menjalankan Black Box Testing.
 
