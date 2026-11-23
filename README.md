@@ -14,86 +14,98 @@ Program Studi Teknik Informatika, Universitas Pamulang
 
 ## Objek pengujian
 
-Objek pengujian pada tugas ini adalah Cleaning Service System, yaitu aplikasi berbasis web yang digunakan sebagai sistem layanan cleaning service.
+**Cleaning Service System**, aplikasi web untuk pengelolaan persediaan barang dan transaksi operasional cleaning service.
 
 Website: https://axioo-production.my.id/cleaning/auth/login.php
 
-Pengujian dilakukan berdasarkan fitur yang dapat diakses melalui browser tanpa menggunakan source code maupun akses database aplikasi.
-
 ## Tujuan
 
-Tujuan pengujian ini adalah memastikan fitur-fitur pada website Cleaning Service System berjalan sesuai dengan fungsinya, mengetahui kemungkinan kesalahan sistem, serta mengevaluasi kualitas dan kemudahan penggunaan aplikasi.
+Menguji fungsi antarmuka, autentikasi, navigasi, tampilan stok, filter dan pencarian barang, form permintaan barang, serta halaman dan validasi transaksi barang masuk/keluar. Hasil dicatat berdasarkan actual result dan evidence yang tersedia.
 
-## Metode yang digunakan
+## Metode dan acuan
 
-Pengujian menggunakan dua metode, yaitu Black Box Testing dan White Box Testing.
+- **Black Box Testing** melalui antarmuka aplikasi.
+- **Automated UI Testing** menggunakan Playwright dan pytest pada browser Chromium.
+- **Boundary Value Analysis** untuk validasi jumlah dan batas maksimum stok.
+- **Equivalence Partitioning** untuk variasi input valid/tidak valid.
+- **State Transition Testing** untuk perubahan pilihan barang dan perubahan validasi.
+- Dokumentasi dan proses dipetakan ke ISO/IEC/IEEE 29119 berdasarkan artikel pengantar Stuart Reid yang diberikan. Artikel tersebut bukan salinan lengkap standar normatif; repository ini tidak mengklaim sertifikasi atau pemenuhan penuh seluruh standar.
 
-Black Box Testing merupakan pengujian perangkat lunak yang berfokus pada fungsi aplikasi berdasarkan input dan output tanpa memeriksa struktur kode program. Pengujian dilakukan untuk memastikan setiap fitur berjalan sesuai dengan kebutuhan.
+## Ruang lingkup pengujian aktual
 
-White Box Testing merupakan pengujian perangkat lunak yang berfokus pada struktur internal dan alur kode program. Pengujian dilakukan dengan memeriksa logika program, kondisi, percabangan, serta jalur eksekusi kode.
+1. Halaman login, struktur form, validasi field kosong, login salah, dan login berhasil.
+2. Dashboard, menu navigasi, dan ringkasan sistem.
+3. Stok barang, filter kategori, pencarian, dan reset filter.
+4. Navigasi Permintaan Barang, Barang Masuk, dan Barang Keluar.
+5. Inspeksi form permintaan serta validasi jumlah, pilihan barang, tanggal, dan catatan.
+6. Inspeksi halaman Barang Masuk dan Barang Keluar.
+7. Inspeksi form barang keluar serta validasi jumlah, pilihan barang, tanggal, keterangan, dan batas maksimum stok.
+8. Perubahan pilihan barang dan validasi jumlah setelah pergantian barang.
 
-Teknik yang digunakan pada skenario tertentu meliputi:
+## Hasil eksekusi terbaru
 
-Black Box Testing:
-Positive Testing
-Negative Testing
-Equivalence Partitioning
-Boundary Value Analysis
+Eksekusi gabungan pada **23 November 2026** menghasilkan:
 
-White Box Testing:
-Statement Coverage
-Branch Coverage
-Path Testing
+| Metrik | Hasil |
+|---|---:|
+| Test yang dikumpulkan pada sesi gabungan | 29 |
+| Passed | 29 |
+| Failed | 0 |
+| Skipped | 0 |
+| Warning pytest | 1 |
+| Durasi | 313,65 detik (5 menit 13,65 detik) |
 
-Acuan kualitas yang digunakan adalah **ISO/IEC 25002:2024**, khususnya pemilihan aspek kualitas, penentuan kebutuhan, serta evaluasi hasil. Standar ini menjadi kerangka penilaian kualitas, bukan panduan khusus untuk menjalankan Black Box Testing.
+TC-001 dan TC-002 memiliki hasil PASS dari pengujian terdahulu dan tidak termasuk dalam sesi gabungan 29 test. Bukti screenshot khusus TC-002 belum teridentifikasi. Dengan demikian, 30 test case dalam daftar memiliki catatan PASS, tetapi tidak seluruhnya dieksekusi dalam satu sesi.
 
-## Rencana pengujian
+Satu warning `PytestRemovedIn10Warning` terkait fixture session-scoped yang didefinisikan sebagai instance method. Warning tidak menyebabkan test gagal dan direkomendasikan untuk diperbaiki.
 
-Kami telah menyusun **30 test case** dengan pembagian berikut:
+**Batasan:** pengujian validasi form terutama memeriksa elemen, atribut HTML, dan validitas browser. Hasil ini tidak membuktikan seluruh validasi server, proses penyimpanan database, keamanan menyeluruh, performa, atau kompatibilitas lintas browser.
 
-| Aspek yang diuji | ID test case | Jumlah |
-|---|---|---:|
-| Functional Suitability dan validasi input | TC-001 – TC-022 | 22 |
-| Interaction Capability / kemudahan penggunaan | TC-023 – TC-025 | 3 |
-| Compatibility | TC-026 – TC-028 | 3 |
-| Performance Efficiency | TC-029 – TC-030 | 2 |
-| **Total** | | **30** |
+## Lingkungan pengujian aktual
 
-Rencana pengujian serta tabel test case tersedia pada berkas berikut:
+| Komponen | Detail |
+|---|---|
+| Sistem operasi | Windows (win32) |
+| Terminal | Windows PowerShell |
+| Python | 3.13.7 |
+| pytest | 9.2.0 |
+| pytest-playwright | 0.10.0 |
+| Browser | Chromium |
+| Mode | Headed (`--headed`) |
+| Framework | Playwright + pytest |
+| Direktori lokal pengujian | `C:\xampp\htdocs\tester` |
+
+## Struktur dokumentasi
 
 - [Test Plan](docs/test-plan.md)
-- [Penjelasan metode dan standar](docs/methodology-and-standard.md)
-- [Daftar test case (CSV)](test-cases/test-cases.csv)
-- [Daftar test case (Excel)](test-cases/test-cases.xlsx)
+- [Pemetaan metodologi dan ISO/IEC/IEEE 29119](docs/methodology-and-standard.md)
+- [Daftar test case CSV](test-cases/test-cases.csv)
+- [Daftar test case Excel](test-cases/test-cases.xlsx)
+- [Test Execution Report (Markdown)](results/test-execution-report.md)
+- [Test Execution Report (Word)](results/Test_Execution_Report.docx)
 - [Format laporan bug](bug-reports/BUG-TEMPLATE.md)
-- [Laporan hasil pengujian](results/test-execution-report.md)
 - [Pertanyaan wawancara QA](interview/qa-interview-questions.md)
 - [Form validasi QA](interview/qa-validation-template.md)
 
-## Cara pelaksanaan
+## Evidence
 
-Setiap test case dijalankan satu per satu melalui browser. Hasil yang muncul dicatat pada kolom **Actual Result**, kemudian dibandingkan dengan **Expected Result** untuk menentukan status **Pass** atau **Fail**. Jika ada kendala yang membuat kasus tidak dapat dijalankan, status dan alasannya juga dicatat.
-
-Screenshot akan disimpan pada folder `evidence/` dengan nama sesuai ID test case, misalnya `TC-001.png`. Jika ditemukan masalah, langkah untuk mengulangi masalah tersebut dicatat dalam laporan bug.
-
-Pengujian formulir dibatasi agar tidak mengirim pesanan yang tidak benar-benar dimaksudkan kepada pemilik usaha.
+Daftar nama 38 screenshot telah diinventarisasi dari folder lokal `C:\xampp\htdocs\tester\evidence`. File gambar belum disertakan dalam ZIP ini. Salin screenshot asli ke folder `evidence/` pada repository sebelum dipublikasikan agar tautan evidence dalam laporan dapat diakses. Jangan unggah password, token, atau data pribadi.
 
 ## Progres pekerjaan
 
 | Kegiatan | Status |
 |---|---|
-| Pemilihan website | Selesai |
-| Penyusunan test plan | Selesai |
-| Penyusunan 30 test case | Selesai |
-| Pelaksanaan pengujian dan pengambilan screenshot | Belum dilakukan |
-| Penyusunan laporan bug dan kesimpulan | Menunggu hasil pengujian |
+| Pemilihan website dan objek pengujian | Selesai |
+| Test plan dan acuan dokumentasi | Tersedia |
+| Penyusunan 30 test case sesuai fitur aktual | Selesai dan diselaraskan |
+| Eksekusi gabungan | 29 test: PASS 29, FAIL 0, SKIP 0 |
+| Hasil historis TC-001 dan TC-002 | PASS; TC-002 perlu konfirmasi evidence khusus |
+| Inventarisasi screenshot lokal | 38 file PNG terdata; belum dimasukkan ke ZIP ini |
+| Laporan eksekusi | Diperbarui di `results/` |
+| White Box Testing | Belum dilakukan; memerlukan source code dan izin |
+| Pengujian server-side, database, performa, dan lintas browser | Belum dicakup secara menyeluruh |
 | Wawancara dan validasi QA profesional | Belum dilakukan |
-
-**Catatan:** Seluruh test case masih berstatus `Not Run`. Hasil Pass/Fail dan kesimpulan kualitas website akan diisi setelah pengujian benar-benar dilakukan.
 
 ## Referensi
 
-1. ISO/IEC. (2024). *ISO/IEC 25002:2024 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model overview and usage*.
-2. Bafageh Bakery. Website resmi: https://bakery.bafageh.com/ (diakses 19 November 2026).
-
-PDF standar berlisensi tidak disertakan di repository. Apabila dosen mewajibkan referensi IEEE dalam rentang 2022–2026, sumber IEEE yang sesuai masih perlu ditambahkan.
+Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards* [Artikel PDF yang diberikan].
