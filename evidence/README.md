@@ -1,6 +1,6 @@
 # Evidence Pengujian
 
-Folder lokal `C:\xampp\htdocs\tester\evidence` telah diinventarisasi dan berisi 38 file PNG untuk TC-001 dan TC-003 sampai TC-030 serta satu bukti inspeksi tambahan. **Screenshot aktual belum disertakan dalam arsip ZIP repository ini.**
+Folder lokal `C:\xampp\htdocs\tester\evidence` telah diinventarisasi dan berisi 37 file PNG untuk TC-001 dan TC-003 sampai TC-030 serta satu bukti inspeksi tambahan. **Screenshot aktual belum disertakan dalam arsip ZIP repository ini.**
 
 Sebelum mengunggah ke GitHub:
 1. Salin file screenshot asli dari folder lokal `evidence/` ke folder repository ini.
