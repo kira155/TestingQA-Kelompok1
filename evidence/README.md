@@ -1,7 +1,11 @@
 # Evidence Pengujian
 
-Simpan **screenshot asli hasil pengujian** dengan nama `TC-001.png`, `TC-002.png`, dst. Beri keterangan tanggal, tester, browser, langkah pengujian, serta bagian UI yang relevan di `results/test-execution-report.md` atau file pasangan `TC-001.md`.
+Folder lokal `C:\xampp\htdocs\tester\evidence` telah diinventarisasi dan berisi 38 file PNG untuk TC-001 dan TC-003 sampai TC-030 serta satu bukti inspeksi tambahan. **Screenshot aktual belum disertakan dalam arsip ZIP repository ini.**
 
-Jangan menggambar ulang screenshot sebagai bukti faktual. Hindari screenshot yang memperlihatkan nomor WhatsApp pribadi, alamat email privat, token, atau data pelanggan. Sensor bila perlu sebelum unggah publik.
+Sebelum mengunggah ke GitHub:
+1. Salin file screenshot asli dari folder lokal `evidence/` ke folder repository ini.
+2. Cocokkan nama file dengan daftar evidence pada `../results/test-execution-report.md`.
+3. Pastikan gambar tidak menampilkan password, token, data pribadi, atau informasi pelanggan.
+4. Jangan membuat ulang atau menggambar screenshot untuk menggantikan bukti faktual.
 
-Folder ini belum berisi screenshot karena test execution belum dijalankan.
+Catatan: bukti screenshot khusus TC-002 belum teridentifikasi pada inventarisasi terakhir.
