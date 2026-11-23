@@ -1,38 +1,38 @@
 # Cara Upload Repository ke GitHub
 
-## Cara paling mudah (website GitHub)
+## File hasil pembaruan
 
-1. Login di https://github.com/ dan klik **New repository**.
-2. Nama: `qa-manual-testing-bafageh-bakery`.
-3. Pilih **Public** bila dosen meminta tautan terbuka. Jangan upload data pribadi atau PDF ISO berlisensi.
-4. Klik **Create repository** (boleh tanpa README bawaan, karena README sudah tersedia).
-5. Di halaman repository klik **Add file → Upload files**.
-6. **Ekstrak ZIP** lalu upload **isi folder** `QA_Manual_Testing_Bafageh_Bakery/` (bukan ZIP saja) agar README tampil di GitHub. Folder kosong tidak terlihat; folder `evidence` memiliki `.gitkeep`.
-7. Isi pesan commit `Initial commit: QA test plan and 30 manual test cases` lalu **Commit changes**.
-8. Tambahkan screenshot setiap selesai testing dan commit, misalnya `docs: add TC-001 to TC-010 evidence and results`.
-9. Kirim tautan repository kepada dosen.
+- `results/test-execution-report.md` — laporan utama untuk ditampilkan GitHub.
+- `results/Test_Execution_Report.docx` — salinan laporan Word.
+- `test-cases/test-cases.csv` dan `test-cases/test-cases.xlsx` — 30 test case yang telah diselaraskan dengan skenario aktual.
+
+## Upload melalui website GitHub
+
+1. Login ke https://github.com/ dan buka repository kelompok.
+2. Ekstrak ZIP terbaru.
+3. Upload isi folder `TestingQA-Kelompok1-main/` ke repository dengan mempertahankan struktur folder.
+4. Salin screenshot asli dari folder lokal `C:\xampp\htdocs\tester\evidence` ke folder `evidence/` repository. Screenshot belum dimasukkan ke ZIP ini.
+5. Periksa `results/test-execution-report.md` dan pastikan tautan evidence dapat dibuka setelah gambar diunggah.
+6. Gunakan pesan commit: `docs: update test execution report and actual test cases`.
+7. Periksa README agar ringkasan hasil dan status progres tampil dengan benar.
 
 ## Alternatif dengan Git CLI
 
-Dari terminal di dalam folder project:
+Jalankan dari folder repository hasil ekstraksi:
 
 ```bash
-git init
-git add .
-git commit -m "Initial QA documentation and 30 manual test cases"
-git branch -M main
-git remote add origin https://github.com/USERNAME/qa-manual-testing-bafageh-bakery.git
-git push -u origin main
+git add README.md docs/test-plan.md test-cases results evidence
+git commit -m "docs: update test execution report and actual test cases"
+git push
 ```
-
-Buat repository kosong di GitHub sebelum menggunakan terminal, lalu ganti USERNAME dengan username Anda. GitHub dapat meminta autentikasi token/credential manager, bukan password biasa.
 
 ## Checklist sebelum publish
 
-- [ ] README tampil di halaman utama repository.
-- [ ] Tidak ada file PDF ISO berlisensi.
-- [ ] Nama/NIM sesuai keperluan tugas, tidak memuat kontak pribadi yang tidak relevan.
-- [ ] Tidak ada screenshot dengan data pribadi pelanggan, cookies/token, atau nomor kontak uji nyata.
-- [ ] Test case dengan status Not Run tidak diklaim Pass.
-- [ ] Folder `evidence/` diisi screenshot hasil uji, bukan gambar ilustrasi.
-- [ ] Wawancara QA asli dan ada bukti izin narasumber bila dipublikasi.
+- [ ] README menampilkan hasil eksekusi: 29 passed, 0 failed, 0 skipped, 1 warning.
+- [ ] TC-001 dan TC-002 ditandai sebagai hasil historis, bukan bagian sesi gabungan.
+- [ ] CSV dan XLSX berisi skenario TC-001 sampai TC-030 yang sama.
+- [ ] Screenshot asli sudah disalin ke `evidence/`.
+- [ ] Tautan screenshot pada laporan dapat dibuka.
+- [ ] Tidak ada password, token, atau data pribadi dalam file dan screenshot.
+- [ ] White Box Testing tidak diklaim telah dilakukan.
+- [ ] Batasan pengujian dicantumkan secara jelas.
