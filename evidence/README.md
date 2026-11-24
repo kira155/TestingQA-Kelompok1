@@ -1,7 +1,15 @@
 # Evidence Pengujian
 
-Simpan **screenshot asli hasil pengujian** dengan nama `TC-001.png`, `TC-002.png`, dst. Beri keterangan tanggal, tester, browser, langkah pengujian, serta bagian UI yang relevan di `results/test-execution-report.md` atau file pasangan `TC-001.md`.
+Folder `evidence/` dalam repository ini **telah berisi 37 screenshot PNG** dari pengujian yang sebelumnya dilakukan:
 
-Jangan menggambar ulang screenshot sebagai bukti faktual. Hindari screenshot yang memperlihatkan nomor WhatsApp pribadi, alamat email privat, token, atau data pelanggan. Sensor bila perlu sebelum unggah publik.
+- 36 screenshot dirujuk oleh `test-cases/test-cases.csv` dan `results/test-execution-report.md`.
+- 1 screenshot inspeksi tambahan: `inspect_filter_stok.png`.
+- Bukti screenshot khusus **TC-002 masih belum teridentifikasi**.
 
-Folder ini belum berisi screenshot karena test execution belum dijalankan.
+Sebelum dipublikasikan secara terbuka, periksa screenshot agar tidak memuat password, token, cookie, data pengguna, atau informasi pelanggan yang bersifat sensitif. Screenshot merupakan evidence historis, **bukan bukti pengujian ulang versi aplikasi 24 November 2026**.
+
+Periksa konsistensi file dengan:
+
+```bash
+python scripts/verify_repository.py
+```
