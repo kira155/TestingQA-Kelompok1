@@ -104,7 +104,11 @@ Keamanan aplikasi secara menyeluruh, validasi sisi server seluruh input, konsist
 
 ## 8. Inventarisasi Bukti
 
+<<<<<<< HEAD
 Pada versi repository yang diperbarui tanggal **24 November 2026**, folder `evidence/` sudah memuat **37 file PNG**: 36 screenshot yang direferensikan test case dan 1 bukti inspeksi tambahan. Screenshot khusus TC-002 belum teridentifikasi. Daftar file di bawah ini dapat dibuka melalui tautan repository:
+=======
+Pada saat inventarisasi, folder lokal `C:\\xampp\\htdocs\\tester\\evidence` berisi 38 file PNG. **File gambar tersebut belum disertakan di dalam ZIP repository ini.** Daftar berikut adalah nama file yang perlu disalin ke folder `evidence/` sebelum laporan dipublikasikan agar tautannya dapat dibuka:
+>>>>>>> 8a815c52c9f38ad2d284ff15ad7176872bd6d670
 - [`inspect_filter_stok.png`](../evidence/inspect_filter_stok.png)
 - [`login-page-inspection.png`](../evidence/login-page-inspection.png)
 - [`TC003_login_kosong.png`](../evidence/TC003_login_kosong.png)
@@ -143,7 +147,11 @@ Pada versi repository yang diperbarui tanggal **24 November 2026**, folder `evid
 - [`TC029_perubahan_pilihan_barang.png`](../evidence/TC029_perubahan_pilihan_barang.png)
 - [`TC030_validasi_jumlah_setelah_ganti_barang.png`](../evidence/TC030_validasi_jumlah_setelah_ganti_barang.png)
 
+<<<<<<< HEAD
 [`inspect_filter_stok.png`](../evidence/inspect_filter_stok.png) merupakan bukti inspeksi tambahan. File screenshot telah tersedia dalam `evidence/`. Pastikan file-file tersebut ikut dalam commit GitHub. Jangan mengunggah password, token, atau data pribadi.
+=======
+[`inspect_filter_stok.png`](../evidence/inspect_filter_stok.png) merupakan bukti inspeksi tambahan. Salin seluruh screenshot asli dari folder lokal `evidence/` ke `evidence/` pada repository, lalu commit file gambar tersebut. Jangan mengunggah password, token, atau data pribadi.
+>>>>>>> 8a815c52c9f38ad2d284ff15ad7176872bd6d670
 
 ## 9. Kesimpulan
 

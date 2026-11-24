@@ -92,7 +92,11 @@ Satu warning `PytestRemovedIn10Warning` terkait fixture session-scoped yang dide
 
 ## Evidence
 
+<<<<<<< HEAD
 **37 file screenshot PNG sudah tersedia** pada folder [`evidence/`](evidence/) dari arsip yang diterima: 36 menjadi rujukan test case, satu merupakan inspeksi tambahan. Bukti khusus TC-002 masih belum teridentifikasi. Sebelum push ke repo publik, periksa screenshot agar tidak memuat password, token, atau data pribadi.
+=======
+Daftar nama 38 screenshot telah diinventarisasi dari folder lokal `C:\xampp\htdocs\tester\evidence`. File gambar belum disertakan dalam ZIP ini. Salin screenshot asli ke folder `evidence/` pada repository sebelum dipublikasikan agar tautan evidence dalam laporan dapat diakses. Jangan unggah password, token, atau data pribadi.
+>>>>>>> 8a815c52c9f38ad2d284ff15ad7176872bd6d670
 
 ## Progres pekerjaan
 
@@ -103,12 +107,17 @@ Satu warning `PytestRemovedIn10Warning` terkait fixture session-scoped yang dide
 | Penyusunan 30 test case sesuai fitur aktual | Selesai dan diselaraskan |
 | Eksekusi gabungan | 29 test: PASS 29, FAIL 0, SKIP 0 |
 | Hasil historis TC-001 dan TC-002 | PASS; TC-002 perlu konfirmasi evidence khusus |
+<<<<<<< HEAD
 | Bukti screenshot dalam repository | 37 file PNG tersedia; TC-002 belum memiliki screenshot khusus |
+=======
+| Inventarisasi screenshot lokal | 38 file PNG terdata; belum dimasukkan ke ZIP ini |
+>>>>>>> 8a815c52c9f38ad2d284ff15ad7176872bd6d670
 | Laporan eksekusi | Diperbarui di `results/` |
 | White Box Testing | Belum dilakukan; memerlukan source code dan izin |
 | Pengujian server-side, database, performa, dan lintas browser | Belum dicakup secara menyeluruh |
 | Wawancara dan validasi QA profesional | Belum dilakukan |
 
+<<<<<<< HEAD
 ## Pembaruan 24 November 2026
 
 Repository ini kini memiliki 37 screenshot yang tersedia, 10 rencana regression test tambahan (status **NOT RUN**), dan pemeriksaan otomatis untuk konsistensi file. Jalankan dari root repository:
@@ -121,6 +130,8 @@ GitHub Actions juga akan menjalankan pemeriksaan yang sama ketika ada push atau 
 
 Source aplikasi Cleaning diperbarui dalam arsip terpisah. Rincian perubahan dan batasan pengujian tersedia di [Changelog](docs/CHANGELOG.md) dan [Regression Plan](docs/regression-plan-2026-11-24.md).
 
+=======
+>>>>>>> 8a815c52c9f38ad2d284ff15ad7176872bd6d670
 ## Referensi
 
 Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards* [Artikel PDF yang diberikan].
