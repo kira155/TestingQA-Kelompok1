@@ -1,16 +1,15 @@
-# Test Environment Readiness Report – Template ISO 29119 Part 3
+# Test Environment Readiness Report
 
-| Item | Kondisi yang dapat diverifikasi dari file | Status |
+| Komponen | Kondisi | Status |
 |---|---|---|
-| Source PHP | Tersedia dalam arsip Cleaning (bukan GitHub QA) | AVAILABLE |
-| Dump MariaDB | Tersedia dari user (termasuk hashed account); jangan disebar publik | AVAILABLE |
-| Konfigurasi runtime | PHP 8.2 & MariaDB 10.4 disebut di header dump; runtime pengujian belum dioperasikan | NOT VERIFIED |
-| Build versi baru | Source ZIP tanggal 25 Nov 2026; hash/build id sebaiknya direkam ketika deploy | NOT VERIFIED |
-| Host staging | Belum ada bukti URL staging aktif atau database uji | NOT READY |
-| Akun staf/admin uji | Database memiliki role; kredensial uji dan izin belum dibuktikan | NOT READY |
-| Backup & data sanitasi | Harus dibuat sebelum import/mutasi | NOT READY |
-| Browser/resolusi | Sesi historis Chromium tersedia, versi terbaru belum diukur | NOT READY |
-| Basis testcase & evidence | CSV/evidence historis diperbaiki | PARTIAL |
-| Kesiapan end-to-end manual | Belum dapat dinyatakan siap | NOT READY |
+| Source PHP | Folder `cleaning/` | AVAILABLE |
+| Database | Skema dan data demo tersedia | AVAILABLE |
+| Runtime | Target PHP 8.2 dan MariaDB 10.4 | NOT VERIFIED |
+| Build | Revisi 25 November 2026 | NOT VERIFIED |
+| Staging | URL lokal belum dicatat | NOT READY |
+| Akun uji | Admin dan staff belum diverifikasi | NOT READY |
+| Backup | Belum dikonfirmasi | NOT READY |
+| Browser | Chromium digunakan pada sesi sebelumnya | PARTIAL |
+| Test case dan bukti | Dokumen tersedia; bukti TC-002 belum ditemukan | PARTIAL |
 
-Sebelum uji: backup database, siapkan database salinan, import source dan migrasi secara terkontrol, buat akun uji terpisah, catat URL dan versi, dan tentukan batasan data yang boleh diubah. Simpan laporan environment readiness yang sudah ditandatangani penguji.
+Sebelum eksekusi, siapkan database uji, catat versi aplikasi dan browser, buat akun admin dan staff, serta periksa koneksi dan akses halaman.

@@ -4,9 +4,9 @@
 **Aplikasi:** Cleaning Service Stock Management  
 **URL pengujian:** https://axioo-production.my.id/cleaning/auth/login.php
 
-**Catatan audit 25 November 2026:** seluruh angka PASS di laporan ini **hasil eksekusi historis Playwright/pytest**, bukan hasil pengujian manual. Perubahan source perbaikan tidak diuji ulang pada sesi tersebut. Periksa `../docs/iso-29119-gap-analysis.md` untuk daftar pekerjaan yang masih NOT RUN.
+**Catatan:** hasil berikut berasal dari sesi Playwright/pytest. Pengujian manual dan regresi versi 25 November 2026 belum dilakukan.
 
-## 1. Ringkasan Eksekutif
+## 1. Ringkasan Hasil
 
 Sesi pengujian sebelumnya mencatat **29 passed, 0 failed, 0 skipped, dan 1 warning** dengan durasi **313,65 detik (5 menit 13,65 detik)**. Rekap tersebut hanya berlaku untuk 29 test dalam sesi gabungan.
 
@@ -153,4 +153,4 @@ Pada sesi gabungan tanggal 23 November 2026, seluruh 29 test yang dikumpulkan be
 
 ## Referensi
 
-Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards* [Artikel PDF yang diberikan].
+Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards*.

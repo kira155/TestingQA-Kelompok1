@@ -1,8 +1,8 @@
-# Audit Kesenjangan ISO/IEC/IEEE 29119 – Cleaning Stock Management
+# Evaluasi Pengujian berdasarkan ISO/IEC/IEEE 29119 – Cleaning Stock Management
 
 **Tanggal:** 25 November 2026  
-**Basis:** repo QA, source PHP, database SQL yang diberikan, artikel Stuart Reid (2013) dan katalog ISO seri 29119 edisi 2021.  
-**Batasan:** audit source dan dokumen secara offline; tidak ada login website, tes browser, tes MariaDB, atau wawancara baru.
+**Dokumen acuan:** source PHP, skema database, artikel Stuart Reid (2013) dan ISO 29119 edisi 2021.  
+**Lingkup:** review source dan dokumen. Pengujian runtime dan wawancara belum dilakukan.
 
 | No | Acuan | Kondisi file awal | Perbaikan yang sudah dilakukan | Sisa pekerjaan / bukti wajib | Status |
 |---|---|---|---|---|---|
@@ -17,15 +17,15 @@
 | 9 | Part 4 – Black Box | Teknik BVA/EP disebut; hasil dominan validasi DOM | Rencana manual termasuk submit, DB, role, error handling | Uji alur bisnis end-to-end secara manual | BELUM |
 | 10 | Part 4 – White Box | Sebelumnya dinyatakan belum ada source | Source PHP ditinjau, jalur dan masalah ditemukan | Jalankan test cabang/keputusan manual; bukti langkah dan hasil | BELUM |
 | 11 | Kebutuhan tugas eksternal | Pertanyaan wawancara sudah ada | Form validasi tetap disiapkan | Wawancara profesional QA nyata dengan bukti dan izin | BELUM |
-| 12 | Konsistensi artefak | Git merge conflict + verifier crash | Parser, kolom, evidence/link, konflik diperbaiki | Jalankan pemeriksaan lagi setelah perubahan lanjutan | DITANGANI |
+| 12 | Konsistensi dokumen | Git merge conflict + verifier crash | Parser, kolom, evidence/link, konflik diperbaiki | Jalankan pemeriksaan lagi setelah perubahan lanjutan | DITANGANI |
 
 ## Prioritas penyelesaian
 
-**P0 – wajib sebelum klaim selesai:** (1) backup DB + salinan staging, (2) uji manual login/akses dan transaksi stok masuk/keluar beserta DB, (3) verifikasi temuan keamanan dan integritas stok, (4) catat actual result + bukti + tester, (5) retest versi yang diperbaiki.
+**P0 – pengujian fungsi utama:** (1) backup DB + salinan staging, (2) uji manual login/akses dan transaksi stok masuk/keluar beserta DB, (3) verifikasi temuan keamanan dan integritas stok, (4) catat actual result + bukti + tester, (5) retest versi yang diperbaiki.
 
-**P1 – penting untuk evaluasi akademik:** (6) jalankan White Box manual pada percabangan yang dipilih, (7) perbarui RTM dan tingkat cakupan requirement, (8) buat laporan akhir dengan residual risk & persetujuan, (9) wawancara QA profesional sesuai arahan dosen.
+**P1 – pengujian lanjutan:** (6) jalankan White Box manual pada percabangan yang dipilih, (7) perbarui RTM dan tingkat cakupan requirement, (8) buat laporan akhir dengan residual risk & persetujuan, (9) wawancara QA profesional sesuai arahan dosen.
 
-**P2 – pelengkap:** (10) evidence TC-002, (11) rapikan spesifikasi nonfungsional (responsiveness, usability, security functional), (12) referensi akademik jurnal sesuai ketentuan dosen setelah divalidasi sumber aslinya.
+**P2 – dokumentasi pendukung:** (10) evidence TC-002, (11) rapikan spesifikasi nonfungsional (responsiveness, usability, security functional), (12) referensi akademik jurnal sesuai ketentuan dosen setelah divalidasi sumber aslinya.
 
 ## Kesimpulan
 

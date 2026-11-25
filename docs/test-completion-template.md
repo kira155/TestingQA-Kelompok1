@@ -15,4 +15,4 @@
 | Kesimpulan & rekomendasi release | [belum dapat ditetapkan] |
 | Peninjau/tanggal persetujuan | [belum ada] |
 
-**Jangan** mengganti placeholder dengan PASS atau persetujuan fiktif. Report ini sengaja berbentuk template agar completion baru dilakukan setelah evidence terkumpul.
+Laporan diselesaikan setelah seluruh hasil dan bukti pengujian ditinjau.

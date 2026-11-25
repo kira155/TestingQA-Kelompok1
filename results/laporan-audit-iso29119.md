@@ -50,11 +50,11 @@ Sesi otomatis tanggal 23 November 2026 menghasilkan 29 PASS, 0 FAIL, 0 SKIP, dan
 
 ## 6. Kesimpulan
 
-Penyusunan dokumen dan perbaikan source telah memberikan dasar yang lebih teratur untuk pengujian. Kesesuaian fungsional versi terbaru masih harus dibuktikan melalui pelaksanaan Black Box dan White Box secara manual. Hasil aktual, bukti, serta status temuan perlu dilengkapi sebelum kelompok dapat menyatakan kegiatan pengujian selesai.
+Dokumentasi dan perbaikan source telah disiapkan. Fungsi aplikasi versi terbaru masih perlu diuji secara manual. Kesimpulan akhir menunggu hasil pengujian dan verifikasi temuan.
 
 ## Referensi
 
 - ISO/IEC/IEEE 29119-2:2021, *Software testing – Test processes*. https://www.iso.org/standard/79428.html
 - ISO/IEC/IEEE 29119-3:2021, *Software testing – Test documentation*. https://www.iso.org/standard/79429.html
 - ISO/IEC/IEEE 29119-4:2021, *Software testing – Test techniques*. https://www.iso.org/standard/79430.html
-- S. Reid, *ISO/IEC/IEEE 29119: The New International Software Testing Standards*, materi pengantar dari lampiran tugas.
+- S. Reid, *ISO/IEC/IEEE 29119: The New International Software Testing Standards*, artikel pengantar standar.

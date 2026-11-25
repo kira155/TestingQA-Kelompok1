@@ -3,7 +3,7 @@
 | Elemen | Rincian |
 |---|---|
 | Project ID | QA-CLEANING-2026 |
-| Version | 2.1 (audit kesenjangan ISO dan perencanaan manual, 25 Nov 2026) |
+| Version | 2.1 (evaluasi ISO dan rencana pengujian manual, 25 Nov 2026) |
 | Dibuat | 23 November 2026 |
 | Object | https://axioo-production.my.id/cleaning/auth/login.php |
 | Tujuan | Menilai fungsi aplikasi, validasi input, alur autentikasi, dan pengalaman penggunaan |
@@ -182,6 +182,6 @@ Severity ditetapkan berdasarkan dampak yang teramati. Jangan menyatakan dugaan p
 Test Plan ini mengadaptasi proses dan dokumentasi pengujian yang dijelaskan dalam artikel pengantar ISO/IEC/IEEE 29119. Fokus penerapan adalah perencanaan berbasis risiko, desain test case yang dapat ditelusuri, persiapan lingkungan, eksekusi, pemantauan, pelaporan insiden, dan penyelesaian. Dokumen ini merupakan pedoman proyek akademik, bukan bukti sertifikasi atau pemenuhan penuh seluruh persyaratan standar.
 
 
-## Pembatasan klaim metode (25 November 2026)
+## Status metode pengujian (25 November 2026)
 
 Sesi 23 November adalah otomatis, bukan manual. Test case baru manual, White Box PHP, dan skenario regresi versi baru semuanya **NOT RUN**. Source tersedia untuk code review, tetapi akses localhost/staging serta eksekusi aplikasi dengan MariaDB tidak dilakukan pada audit dokumen ini. RTM, daftar risiko, dan rincian sisa pekerjaan ada di folder `docs/`.

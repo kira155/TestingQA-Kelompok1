@@ -1,16 +1,11 @@
-# Panduan pembaruan repository GitHub
+# Pemeliharaan repository
 
-1. Ekstrak ZIP. Salin seluruh isi folder `TestingQA-Kelompok1-main` ke repository lokal yang sudah memiliki folder `.git`. Jangan menghapus `.git`.
-2. Buka repository melalui VS Code. Periksa screenshot lama sebelum memublikasikannya; gunakan repository private jika bukti memuat informasi operasional atau identitas pribadi.
-3. Jalankan perintah berikut melalui terminal:
+Gunakan branch kerja untuk perubahan source dan dokumen. Periksa perubahan sebelum commit.
 
-```powershell
+```bash
 python scripts/verify_repository.py
 git status
-git add .
-git diff --cached --stat
-git commit -m "Update QA documentation and add Cleaning Stock Management source"
-git push origin main
+git diff --stat
 ```
 
-Skema dan data contoh hanya untuk localhost. Dump database asli, foto operasional, dan file kredensial tidak boleh ikut diunggah. Pemeriksaan repository tidak menggantikan pengujian manual atau regresi.
+Database demo digunakan untuk pengujian lokal. Kredensial, dump produksi dan bukti yang memuat data pribadi tidak termasuk dalam materi publik.
