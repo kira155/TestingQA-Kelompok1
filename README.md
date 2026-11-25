@@ -4,9 +4,21 @@
 
 Anggota: Abdul Kholik (231011400097), Ahmad Reza (231011403385), Akbar Rusmanto (231011401424), Adjie Febrianto (231011400092).
 
+<<<<<<< HEAD
 ## Latar belakang
 
 Cleaning Stock Management merupakan aplikasi berbasis PHP dan MariaDB untuk mencatat persediaan, permintaan barang, dan transaksi masuk maupun keluar. Pengujian dilakukan untuk mengetahui apakah fungsi aplikasi bekerja sesuai kebutuhan serta mengidentifikasi kekurangan pada validasi input, hak akses pengguna, dan pengelolaan stok.
+=======
+| No. | Nama | NIM |
+|---|---|---|
+| 1 | Abdul Kholik | 231011400097 |
+| 2 | Ahmad Reza | 231011403385 |
+| 3 | Akbar Rusmanto | 231011401424 | 
+| 4 | Adjie Febrianto | 231011400092 |
+
+
+## Objek pengujian
+>>>>>>> c772c2fd17c25c02587f61eb60daaa3ef380fd47
 
 ## Metode dan standar pengujian
 
