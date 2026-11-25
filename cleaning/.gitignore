@@ -1,0 +1,19 @@
+# Berkas dari mesin lokal dan lingkungan runtime
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Foto barang hasil unggah pengguna tidak perlu ikut commit
+/uploads/*
+!/uploads/.gitkeep
+
+# Cache pengujian Python
+__pycache__/
+*.pyc
+
+!/uploads/.htaccess

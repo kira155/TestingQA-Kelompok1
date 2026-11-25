@@ -4,9 +4,11 @@
 **Aplikasi:** Cleaning Service Stock Management  
 **URL pengujian:** https://axioo-production.my.id/cleaning/auth/login.php
 
+**Catatan audit 25 November 2026:** seluruh angka PASS di laporan ini **hasil eksekusi historis Playwright/pytest**, bukan hasil pengujian manual. Perubahan source perbaikan tidak diuji ulang pada sesi tersebut. Periksa `../docs/iso-29119-gap-analysis.md` untuk daftar pekerjaan yang masih NOT RUN.
+
 ## 1. Ringkasan Eksekutif
 
-Eksekusi gabungan menghasilkan **29 passed, 0 failed, 0 skipped, dan 1 warning** dalam **313,65 detik (5 menit 13,65 detik)**. Angka ini hanya mencakup 29 test yang dikumpulkan pada sesi gabungan.
+Sesi pengujian sebelumnya mencatat **29 passed, 0 failed, 0 skipped, dan 1 warning** dengan durasi **313,65 detik (5 menit 13,65 detik)**. Rekap tersebut hanya berlaku untuk 29 test dalam sesi gabungan.
 
 TC-001 dan TC-002 memiliki hasil PASS dari pengujian terdahulu, tetapi tidak termasuk dalam sesi gabungan. TC-002 masih memerlukan konfirmasi bukti screenshot khusus. Karena itu, 30 skenario memiliki catatan hasil PASS, tetapi bukan berarti 30 test dijalankan dalam satu sesi.
 
@@ -34,7 +36,7 @@ Laporan mengadaptasi unsur dokumentasi dari materi Stuart Reid, *ISO/IEC/IEEE 29
 
 Ruang lingkup meliputi login, dashboard, stok barang, filter dan pencarian, navigasi transaksi, form permintaan barang, halaman barang masuk/keluar, serta validasi form dan batas maksimum stok. Metode yang digunakan adalah black-box testing melalui Playwright dan pytest. Boundary Value Analysis digunakan pada pengujian jumlah dan batas stok; inspeksi antarmuka digunakan untuk memeriksa elemen, menu, tabel, input, dropdown, dan textarea.
 
-Pengujian validasi form pada sesi ini terutama memeriksa elemen, atribut HTML, dan validitas browser. Hasil tersebut tidak otomatis membuktikan validasi sisi server atau keberhasilan penyimpanan transaksi.
+Pengujian validasi form pada sesi ini terutama memeriksa elemen, atribut HTML, dan validitas browser. Karena fokusnya pada antarmuka, pengujian ini belum cukup untuk memastikan bahwa validasi server dan penyimpanan transaksi berjalan dengan benar.
 
 ## 5. Ringkasan Hasil Eksekusi
 
@@ -104,11 +106,7 @@ Keamanan aplikasi secara menyeluruh, validasi sisi server seluruh input, konsist
 
 ## 8. Inventarisasi Bukti
 
-<<<<<<< HEAD
 Pada versi repository yang diperbarui tanggal **24 November 2026**, folder `evidence/` sudah memuat **37 file PNG**: 36 screenshot yang direferensikan test case dan 1 bukti inspeksi tambahan. Screenshot khusus TC-002 belum teridentifikasi. Daftar file di bawah ini dapat dibuka melalui tautan repository:
-=======
-Pada saat inventarisasi, folder lokal `C:\\xampp\\htdocs\\tester\\evidence` berisi 38 file PNG. **File gambar tersebut belum disertakan di dalam ZIP repository ini.** Daftar berikut adalah nama file yang perlu disalin ke folder `evidence/` sebelum laporan dipublikasikan agar tautannya dapat dibuka:
->>>>>>> 8a815c52c9f38ad2d284ff15ad7176872bd6d670
 - [`inspect_filter_stok.png`](../evidence/inspect_filter_stok.png)
 - [`login-page-inspection.png`](../evidence/login-page-inspection.png)
 - [`TC003_login_kosong.png`](../evidence/TC003_login_kosong.png)
@@ -147,11 +145,7 @@ Pada saat inventarisasi, folder lokal `C:\\xampp\\htdocs\\tester\\evidence` beri
 - [`TC029_perubahan_pilihan_barang.png`](../evidence/TC029_perubahan_pilihan_barang.png)
 - [`TC030_validasi_jumlah_setelah_ganti_barang.png`](../evidence/TC030_validasi_jumlah_setelah_ganti_barang.png)
 
-<<<<<<< HEAD
 [`inspect_filter_stok.png`](../evidence/inspect_filter_stok.png) merupakan bukti inspeksi tambahan. File screenshot telah tersedia dalam `evidence/`. Pastikan file-file tersebut ikut dalam commit GitHub. Jangan mengunggah password, token, atau data pribadi.
-=======
-[`inspect_filter_stok.png`](../evidence/inspect_filter_stok.png) merupakan bukti inspeksi tambahan. Salin seluruh screenshot asli dari folder lokal `evidence/` ke `evidence/` pada repository, lalu commit file gambar tersebut. Jangan mengunggah password, token, atau data pribadi.
->>>>>>> 8a815c52c9f38ad2d284ff15ad7176872bd6d670
 
 ## 9. Kesimpulan
 

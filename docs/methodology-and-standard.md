@@ -107,3 +107,8 @@ Setiap test case sebaiknya dapat ditelusuri ke fitur, kebutuhan, atau test basis
 ## Referensi
 
 Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards* [Artikel PDF yang diberikan].
+
+
+## Catatan versi dan interpretasi
+
+Materi Stuart Reid dalam lampiran menjelaskan versi awal ISO 29119 (2013). Untuk laporan proyek 2026, rujukan katalog ISO yang dapat diverifikasi adalah ISO/IEC/IEEE 29119-2:2021, -3:2021, dan -4:2021. Pemetaan dalam proyek ini bersifat adaptasi praktis (tailoring) tanpa audit kesesuaian formal. Perbedaan manual vs otomatis harus dilaporkan pada level setiap test case.
