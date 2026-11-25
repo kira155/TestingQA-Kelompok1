@@ -9,8 +9,9 @@ Program Studi Teknik Informatika, Universitas Pamulang
 |---|---|---|
 | 1 | Abdul Kholik | 231011400097 |
 | 2 | Ahmad Reza | 231011403385 |
-| 3 | Akbar Rusmanto | 231011401424|
+| 3 | Akbar Rusmanto | 231011401424 | 
 | 4 | Adjie Febrianto | 231011400092 |
+
 
 ## Objek pengujian
 
