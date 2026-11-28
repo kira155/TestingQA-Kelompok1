@@ -1,0 +1,291 @@
+﻿ID,Urutan,Keyword,Parameter
+TC-001,1,BukaHalaman,Login
+TC-001,2,PeriksaElemen,judul; form dan tombol login terlihat
+TC-001,3,PeriksaHasil,Halaman login dapat dibuka dan elemen utama tampil.
+TC-001,4,SimpanBukti,TC-001
+TC-002,1,BukaHalaman,Login
+TC-002,2,PeriksaElemen,"form; jumlah, method, action, username, password, submit"
+TC-002,3,PeriksaHasil,Form menggunakan metode dan tujuan yang sesuai serta memiliki field login yang dapat diidentifikasi.
+TC-002,4,SimpanBukti,TC-002
+TC-003,1,IsiField,username; KOSONG
+TC-003,2,IsiField,password; KOSONG
+TC-003,3,PeriksaValiditas,form; kosong; tidak valid
+TC-003,4,PeriksaHasil,Form tidak valid dan login tidak diteruskan dengan field wajib kosong.
+TC-003,5,SimpanBukti,TC-003
+TC-004,1,IsiField,username; KOSONG
+TC-004,2,IsiField,password; data uji
+TC-004,3,PeriksaValiditas,form; username kosong; tidak valid
+TC-004,4,PeriksaHasil,Form menolak kondisi username kosong.
+TC-004,5,SimpanBukti,TC-004
+TC-005,1,IsiField,username; data uji
+TC-005,2,IsiField,password; KOSONG
+TC-005,3,PeriksaValiditas,form; password kosong; tidak valid
+TC-005,4,PeriksaHasil,Form menolak kondisi password kosong.
+TC-005,5,SimpanBukti,TC-005
+TC-006,1,IsiField,username; akun salah
+TC-006,2,IsiField,password; data uji salah
+TC-006,3,KlikTombol,Login
+TC-006,4,PeriksaPesan,pesan penolakan
+TC-006,5,PeriksaHalaman,Login; dashboard tidak terbuka
+TC-006,6,PeriksaHasil,Login ditolak; dashboard tidak terbuka; pesan kesalahan ditampilkan.
+TC-006,7,SimpanBukti,TC-006
+TC-007,1,MasukAkun,akun uji sah; password dari penguji
+TC-007,2,PeriksaHasil,Pengguna berhasil masuk dan diarahkan ke dashboard.
+TC-007,3,SimpanBukti,TC-007
+TC-008,1,PeriksaHalaman,Dashboard; terbuka
+TC-008,2,PeriksaElemen,"menu, ringkasan, tabel stok, transaksi terakhir; terlihat"
+TC-008,3,PeriksaHasil,Dashboard dan menu utama tampil dan dapat dikenali.
+TC-008,4,SimpanBukti,TC-008
+TC-009,1,CekTampilan,Stok Barang; judul dan tabel daftar stok
+TC-009,2,PeriksaHasil,Halaman stok terbuka dan tabel daftar stok tersedia.
+TC-009,3,SimpanBukti,TC-009
+TC-010,1,PilihOpsi,Kategori; Chemical
+TC-010,2,KlikTombol,Filter
+TC-010,3,PeriksaData,kategori; Chemical saja
+TC-010,4,PilihOpsi,Kategori; Peralatan
+TC-010,5,KlikTombol,Filter
+TC-010,6,PeriksaData,kategori; Peralatan saja
+TC-010,7,PilihOpsi,Kategori; Semua Kategori
+TC-010,8,KlikTombol,Filter
+TC-010,9,PeriksaData,kategori; semua barang
+TC-010,10,PeriksaHasil,Hasil hanya menampilkan kategori terpilih; pilihan semua menampilkan seluruh kategori.
+TC-010,11,SimpanBukti,TC-010
+TC-011,1,IsiField,Nama Barang; Sabun
+TC-011,2,KlikTombol,Filter
+TC-011,3,PeriksaData,hasil; sesuai kata kunci
+TC-011,4,IsiField,Nama Barang; BarangTidakAdaXYZ987
+TC-011,5,KlikTombol,Filter
+TC-011,6,PeriksaData,hasil; kosong
+TC-011,7,PeriksaHasil,Pencarian menampilkan hasil sesuai kata kunci atau pesan bahwa data tidak ditemukan.
+TC-011,8,SimpanBukti,TC-011
+TC-012,1,IsiField,Nama Barang; Sabun
+TC-012,2,PilihOpsi,Kategori; Chemical
+TC-012,3,KlikTombol,Filter
+TC-012,4,KlikTombol,Reset
+TC-012,5,PeriksaElemen,filter; kosong dan Semua Kategori
+TC-012,6,PeriksaData,jumlah; seluruh data
+TC-012,7,PeriksaHasil,Filter dikosongkan dan seluruh data stok ditampilkan kembali.
+TC-012,8,SimpanBukti,TC-012
+TC-013,1,BukaHalaman,Permintaan Barang
+TC-013,2,PeriksaHalaman,Permintaan Barang; URL sesuai
+TC-013,3,BukaHalaman,Barang Masuk
+TC-013,4,PeriksaHalaman,Barang Masuk; URL sesuai
+TC-013,5,BukaHalaman,Barang Keluar
+TC-013,6,PeriksaHalaman,Barang Keluar; URL sesuai
+TC-013,7,PeriksaHasil,Setiap menu membuka halaman sesuai label.
+TC-013,8,SimpanBukti,TC-013
+TC-014,1,CekTampilan,"Permintaan Barang; dropdown, jumlah, tanggal, keterangan, tombol kirim"
+TC-014,2,PeriksaHasil,Komponen utama form tersedia dan tombol dapat digunakan.
+TC-014,3,SimpanBukti,TC-014
+TC-015,1,PeriksaValiditas,"Jumlah Diminta; KOSONG,0,-1,10; tiga pertama tidak valid; 10 valid"
+TC-015,2,PeriksaHasil,"Jumlah kosong, nol, dan negatif ditolak; nilai positif diterima."
+TC-015,3,SimpanBukti,TC-015
+TC-016,1,PeriksaValiditas,"Pilih Barang; kosong,Baygon / HIT; kosong tidak valid; barang valid"
+TC-016,2,PeriksaHasil,Pilihan kosong ditolak; barang yang dipilih menghasilkan nilai valid.
+TC-016,3,SimpanBukti,TC-016
+TC-017,1,PeriksaValiditas,"Tanggal Permintaan; kosong,2026-11-23; kosong tidak valid; tanggal valid"
+TC-017,2,PeriksaHasil,Tanggal kosong ditolak dan tanggal valid diterima.
+TC-017,3,SimpanBukti,TC-017
+TC-018,1,PeriksaValiditas,"Keterangan; kosong,catatan kebutuhan operasional; keduanya valid"
+TC-018,2,PeriksaHasil,Catatan bersifat opsional; kondisi kosong dan terisi dapat diterima.
+TC-018,3,SimpanBukti,TC-018
+TC-019,1,CekTampilan,"Barang Masuk; heading, navigasi, dua tabel dan header"
+TC-019,2,PeriksaHasil,Halaman tampil dan tabel informasi barang masuk tersedia.
+TC-019,3,SimpanBukti,TC-019
+TC-020,1,CekTampilan,"Barang Keluar; heading, navigasi, input, dropdown, textarea dan tabel"
+TC-020,2,PeriksaHasil,Halaman tampil dengan komponen transaksi yang dapat diidentifikasi.
+TC-020,3,SimpanBukti,TC-020
+TC-021,1,PeriksaElemen,"form Barang Keluar; jumlah dan tanggal required, dropdown required, catatan opsional"
+TC-021,2,PeriksaHasil,Komponen form dan atribut dasarnya tersedia.
+TC-021,3,SimpanBukti,TC-021
+TC-022,1,PeriksaValiditas,"Jumlah Keluar; kosong,0,-1,1,2; tiga pertama tidak valid; 1 dan 2 valid jika stok cukup"
+TC-022,2,PeriksaHasil,"Kosong, nol, dan negatif ditolak; nilai 1 dan 2 diterima."
+TC-022,3,SimpanBukti,TC-022
+TC-023,1,PeriksaValiditas,"Barang; kosong,Baygon / HIT; kosong tidak valid; barang valid"
+TC-023,2,PeriksaHasil,Pilihan kosong ditolak; pilihan barang valid diterima.
+TC-023,3,SimpanBukti,TC-023
+TC-024,1,PeriksaValiditas,"Tanggal; kosong,2026-11-23; kosong tidak valid; tanggal valid"
+TC-024,2,PeriksaHasil,Tanggal kosong ditolak dan tanggal valid diterima.
+TC-024,3,SimpanBukti,TC-024
+TC-025,1,PeriksaValiditas,"Keterangan; kosong,Pemakaian barang untuk cleaning lobby; keduanya valid"
+TC-025,2,PeriksaHasil,Keterangan opsional; kondisi kosong dan terisi diterima.
+TC-025,3,SimpanBukti,TC-025
+TC-026,1,PeriksaElemen,Jumlah Keluar; max awal belum tersedia
+TC-026,2,PilihOpsi,Barang; Baygon / HIT
+TC-026,3,PeriksaElemen,Jumlah Keluar; max mengikuti stok
+TC-026,4,PeriksaHasil,Batas maksimum jumlah menyesuaikan stok barang terpilih.
+TC-026,5,SimpanBukti,TC-026
+TC-027,1,CekBatasStok,"Baygon / HIT; 35; 34,35,36 (sesuaikan data uji jika stok berbeda)"
+TC-027,2,PeriksaHasil,Nilai sampai batas stok diterima; nilai di atas stok ditolak.
+TC-027,3,SimpanBukti,TC-027
+TC-028,1,CekBatasStok,"Chinoff 50 EC; 2; 1,2,3 (sesuaikan data uji jika stok berbeda)"
+TC-028,2,PeriksaHasil,Nilai sampai batas stok diterima; nilai di atas stok ditolak.
+TC-028,3,SimpanBukti,TC-028
+TC-029,1,PilihOpsi,Barang; Baygon / HIT
+TC-029,2,PeriksaElemen,Jumlah Keluar; max 35 pada data historis
+TC-029,3,PilihOpsi,Barang; Chinoff 50 EC
+TC-029,4,PeriksaElemen,Jumlah Keluar; max 2 pada data historis
+TC-029,5,PilihOpsi,Barang; KOSONG
+TC-029,6,PeriksaElemen,Jumlah Keluar; max kosong
+TC-029,7,PeriksaHasil,Max berubah mengikuti barang terpilih dan dibersihkan saat pilihan kosong.
+TC-029,8,SimpanBukti,TC-029
+TC-030,1,PilihOpsi,Barang; Baygon / HIT
+TC-030,2,PeriksaValiditas,Jumlah Keluar; 3; valid jika stok 35
+TC-030,3,PilihOpsi,Barang; Chinoff 50 EC
+TC-030,4,PeriksaValiditas,"Jumlah Keluar; 3,2; 3 tidak valid, 2 valid jika stok 2"
+TC-030,5,PeriksaHasil,Validitas jumlah dihitung ulang mengikuti stok barang yang sedang dipilih.
+TC-030,6,SimpanBukti,TC-030
+REG-001,1,MasukAkun,staff uji; password
+REG-001,2,CekTampilan,"Dashboard; footer Cleaning Stock Management, tanpa kredit kelompok"
+REG-001,3,CekTampilan,"Stok Barang; footer Cleaning Stock Management, tanpa kredit kelompok"
+REG-001,4,CekTampilan,"Permintaan Barang; footer Cleaning Stock Management, tanpa kredit kelompok"
+REG-001,5,CekTampilan,"Barang Masuk; footer Cleaning Stock Management, tanpa kredit kelompok"
+REG-001,6,CekTampilan,"Barang Keluar; footer Cleaning Stock Management, tanpa kredit kelompok"
+REG-001,7,PeriksaHasil,"Footer konsisten, menampilkan “Cleaning Stock Management”, dan tidak menampilkan kredit kelompok"
+REG-001,8,SimpanBukti,REG-001
+REG-002,1,CekTampilan,"Login; footer baru dan tahun sesuai server, tanpa kredit kelompok"
+REG-002,2,PeriksaHasil,"Footer produk tampil, tahun sesuai server, tidak ada teks “Created by Kelompok 1”"
+REG-002,3,SimpanBukti,REG-002
+REG-003,1,UbahViewport,375
+REG-003,2,PeriksaElemen,"footer; terbaca, tidak overflow"
+REG-003,3,UbahViewport,768
+REG-003,4,PeriksaElemen,"footer; terbaca, tidak overflow"
+REG-003,5,PeriksaHasil,Teks footer terbaca; tidak menutup konten; tidak memunculkan horizontal overflow dari footer
+REG-003,6,SimpanBukti,REG-003
+REG-004,1,UbahViewport,375
+REG-004,2,KlikTombol,Menu mobile
+REG-004,3,PeriksaElemen,aria-expanded; true
+REG-004,4,TekanTombol,Escape
+REG-004,5,PeriksaElemen,aria-expanded; false
+REG-004,6,KlikTombol,Menu mobile
+REG-004,7,KlikTombol,area luar
+REG-004,8,PeriksaElemen,aria-expanded; false
+REG-004,9,PeriksaHasil,Menu menutup; atribut `aria-expanded` konsisten
+REG-004,10,SimpanBukti,REG-004
+REG-005,1,BukaHalaman,Registrasi
+REG-005,2,IsiField,username; akun dummy baru
+REG-005,3,IsiField,password; dari penguji
+REG-005,4,IsiField,konfirmasi; password sama
+REG-005,5,KlikTombol,Daftar
+REG-005,6,PeriksaDatabase,akun dummy; role staff
+REG-005,7,MasukAkun,akun dummy baru; password
+REG-005,8,PeriksaHasil,"Akun dibuat sebagai `staff`, login berhasil bila database tersedia"
+REG-005,9,SimpanBukti,REG-005
+REG-006,1,KirimRequestUji,"POST; auth/register.php; username dummy unik, password valid, konfirmasi sama, role=admin"
+REG-006,2,PeriksaDatabase,akun dummy; role staff
+REG-006,3,PeriksaHasil,Backend **mengabaikan** role dari request; akun tetap `staff`
+REG-006,4,SimpanBukti,REG-006
+REG-007,1,KirimRequestUji,GET; scripts/create_admin.php; tanpa sesi
+REG-007,2,PeriksaRespons,403; tidak ada form
+REG-007,3,PeriksaHasil,HTTP 403; tidak ada formulir pembuatan admin di browser
+REG-007,4,SimpanBukti,REG-007
+REG-008,1,JalankanCLI,scripts/create_admin.php; akun dummy dan variabel lingkungan valid
+REG-008,2,PeriksaDatabase,akun dummy; admin
+REG-008,3,JalankanCLI,ulang username sama; ditolak
+REG-008,4,PeriksaHasil,Admin berhasil dibuat tanpa menampilkan password; username duplikat ditolak
+REG-008,5,SimpanBukti,REG-008
+REG-009,1,MasukAkun,staff uji; password
+REG-009,2,BukaHalaman,Registrasi
+REG-009,3,PeriksaHalaman,Dashboard; redirect
+REG-009,4,PeriksaHasil,Dialihkan ke `/cleaning/pages/dashboard.php`
+REG-009,5,SimpanBukti,REG-009
+REG-010,1,JalankanKasus,TC-001 sampai TC-030; ikuti prosedur TP-01 sampai TP-03
+REG-010,2,PeriksaHasil,"Fitur login, stok, filter, permintaan, dan transaksi tetap berfungsi"
+REG-010,3,SimpanBukti,REG-010
+FU-001,1,KirimRequestUji,POST; actions/transaksi_action.php; transaksi dummy valid tanpa sesi
+FU-001,2,PeriksaRespons,redirect login
+FU-001,3,PeriksaDatabase,transaksi; tidak ada INSERT
+FU-001,4,PeriksaHasil,Redirect login sebelum INSERT; tidak ada perubahan data
+FU-001,5,SimpanBukti,FU-001
+FU-002,1,MasukAkun,staff uji; password
+FU-002,2,BukaHalaman,Kelola User via URL
+FU-002,3,PeriksaRespons,403; akses ditolak
+FU-002,4,PeriksaHasil,Akses ditolak; HTTP 403 sesuai aturan yang disepakati
+FU-002,5,SimpanBukti,FU-002
+FU-003,1,MasukAkun,admin uji; password
+FU-003,2,BukaHalaman,Kelola Barang
+FU-003,3,KlikTombol,Tambah Barang
+FU-003,4,IsiField,satuan; liter
+FU-003,5,IsiField,stok awal; -1
+FU-003,6,KlikTombol,Simpan
+FU-003,7,PeriksaDatabase,barang dummy; tidak tersimpan negatif
+FU-003,8,KlikTombol,Tambah Barang
+FU-003,9,IsiField,satuan; liter
+FU-003,10,IsiField,stok awal; 5
+FU-003,11,KlikTombol,Simpan
+FU-003,12,PeriksaDatabase,barang dummy; satuan liter dan stok 5
+FU-003,13,PeriksaHasil,Stok negatif ditolak; satuan dan stok valid tersimpan sesuai input
+FU-003,14,SimpanBukti,FU-003
+FU-004,1,SiapkanDataUji,stok dummy 5; dua sesi sah
+FU-004,2,KirimRequestUji,"dua POST transaksi keluar qty 4 secara bersamaan, staging saja"
+FU-004,3,PeriksaDatabase,stok akhir; 1 jika satu berhasil; satu transaksi
+FU-004,4,PeriksaHasil,Maksimum satu transaksi berhasil; stok tidak negatif dan riwayat konsisten
+FU-004,5,SimpanBukti,FU-004
+FU-005,1,SiapkanDataUji,dua request dengan ID berawalan sama
+FU-005,2,BukaHalaman,Barang Masuk
+FU-005,3,KlikTombol,Proses permintaan pertama
+FU-005,4,IsiField,jumlah; 1
+FU-005,5,KlikTombol,Simpan
+FU-005,6,PeriksaDatabase,dua request; hanya ID terpilih berubah
+FU-005,7,PeriksaHasil,Barang masuk terkait hanya dengan ID yang tepat
+FU-005,8,SimpanBukti,FU-005
+FU-006,1,CekStokAntarHalaman,lima barang; refresh kedua halaman pada kondisi sama
+FU-006,2,PeriksaHasil,"Stok sama jika definisi, periode dan sumber sama"
+FU-006,3,SimpanBukti,FU-006
+FU-007,1,BukaHalaman,Kelola Barang
+FU-007,2,PeriksaData,Detergen/rinso; catat stok
+FU-007,3,PeriksaDatabase,stok dan histori; telusuri perhitungan
+FU-007,4,PeriksaHasil,Stok fisik tidak negatif; koreksi harus dapat dijelaskan
+FU-007,5,SimpanBukti,FU-007
+FU-008,1,BukaHalaman,Login
+FU-008,2,UbahViewport,desktop sekitar 1840
+FU-008,3,PeriksaElemen,judul; utuh
+FU-008,4,UbahViewport,375
+FU-008,5,PeriksaElemen,judul; utuh
+FU-008,6,PeriksaHasil,Judul login terbaca utuh tanpa tumpang tindih
+FU-008,7,SimpanBukti,FU-008
+FU-009,1,BukaHalaman,Permintaan Barang
+FU-009,2,PeriksaData,Sisa Belum Masuk; catat
+FU-009,3,BukaHalaman,Barang Masuk
+FU-009,4,PeriksaData,Total Qty Pending; catat
+FU-009,5,PeriksaDatabase,request belum terpenuhi; bandingkan cakupan
+FU-009,6,PeriksaHasil,"Jika cakupan dan definisi sama, total sama; jika tidak, dokumentasikan perbedaan"
+FU-009,7,SimpanBukti,FU-009
+E2E-001,1,SiapkanDataUji,barang dummy stok 10
+E2E-001,2,BukaHalaman,Permintaan Barang
+E2E-001,3,PilihOpsi,Barang; dummy
+E2E-001,4,IsiField,Jumlah Diminta; 5
+E2E-001,5,KlikTombol,Kirim Permintaan
+E2E-001,6,BukaHalaman,Barang Masuk
+E2E-001,7,KlikTombol,Proses request dummy
+E2E-001,8,IsiField,jumlah; 3
+E2E-001,9,KlikTombol,Simpan
+E2E-001,10,PeriksaData,sisa request; 2
+E2E-001,11,KlikTombol,Proses request dummy
+E2E-001,12,IsiField,jumlah; 2
+E2E-001,13,KlikTombol,Simpan
+E2E-001,14,PeriksaDatabase,stok 15; sisa 0; complete
+E2E-001,15,PeriksaHasil,Sisa 2 lalu 0; status complete; stok 15
+E2E-001,16,SimpanBukti,E2E-001
+E2E-002,1,SiapkanDataUji,stok 10
+E2E-002,2,BukaHalaman,Barang Keluar
+E2E-002,3,PilihOpsi,Barang; dummy
+E2E-002,4,IsiField,Jumlah Keluar; 3
+E2E-002,5,KlikTombol,Simpan Barang Keluar
+E2E-002,6,PeriksaDatabase,stok 7; transaksi qty 3
+E2E-002,7,PeriksaHasil,Stok 7; riwayat qty 3
+E2E-002,8,SimpanBukti,E2E-002
+E2E-003,1,BukaHalaman,Laporan Bulanan
+E2E-003,2,PilihOpsi,Bulan/Tahun/Kategori; periode uji
+E2E-003,3,KlikTombol,Tampilkan
+E2E-003,4,PeriksaData,total; cocokkan transaksi uji
+E2E-003,5,KlikTombol,Export Excel
+E2E-003,6,PeriksaElemen,file hasil ekspor; dapat dibuka
+E2E-003,7,PeriksaData,total file; sesuai laporan
+E2E-003,8,PeriksaHasil,Total laporan sesuai transaksi; file ekspor dapat dibuka dan sesuai
+E2E-003,9,SimpanBukti,E2E-003
+E2E-004,1,KeluarAkun,-
+E2E-004,2,BukaHalaman,Dashboard via URL
+E2E-004,3,PeriksaHalaman,Login; redirect
+E2E-004,4,PeriksaHasil,Sesi berakhir; halaman privat mengarah login
+E2E-004,5,SimpanBukti,E2E-004

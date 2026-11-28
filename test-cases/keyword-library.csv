@@ -1,0 +1,26 @@
+﻿Keyword,Layer,Type,Parameter,Instruksi
+BukaHalaman,Test interface,Simple,halaman/URL,Buka URL atau menu yang ditentukan; tunggu halaman selesai dimuat.
+IsiField,Test interface,Simple,field; nilai,Isi field dengan nilai yang ditentukan; kosongkan jika nilai KOSONG.
+PilihOpsi,Test interface,Simple,field; opsi,Pilih opsi dropdown atau filter sesuai parameter.
+KlikTombol,Test interface,Simple,label,Klik tombol atau tautan sesuai label satu kali.
+PeriksaElemen,Test interface,Simple,elemen; kondisi,"Periksa keberadaan, label, keterbacaan atau atribut elemen sesuai kondisi."
+PeriksaValiditas,Test interface,Simple,field; nilai; hasil,Masukkan nilai yang disebutkan satu per satu; periksa validitas browser tanpa menyimpan transaksi.
+PeriksaPesan,Test interface,Simple,pesan,Bandingkan pesan yang tampil dengan expected result.
+PeriksaHalaman,Test interface,Simple,halaman; kondisi,Periksa URL/judul dan kondisi halaman tujuan.
+PeriksaData,Test interface,Simple,data; kondisi,"Baca nilai yang tampil, bandingkan dengan kondisi yang diharapkan dan catat."
+UbahViewport,Test interface,Simple,lebar px,Atur lebar viewport browser sesuai parameter.
+TekanTombol,Test interface,Simple,tombol keyboard,Tekan tombol keyboard yang disebutkan.
+KirimRequestUji,Test interface,Simple,metode; endpoint; payload,Hanya pada server uji berizin: kirim request sesuai parameter dan catat respons.
+JalankanCLI,Test interface,Simple,perintah; kondisi,"Pada lingkungan uji, jalankan perintah dengan kredensial dari variabel lingkungan; jangan simpan rahasia."
+PeriksaRespons,Test interface,Simple,kode; kondisi,"Catat status HTTP, lokasi redirect dan kondisi respons yang diharapkan."
+PeriksaDatabase,Test interface,Simple,data; kondisi,"Pada database uji, baca data sebelum/sesudah dan cocokkan perubahan; jangan mengubah produksi."
+JalankanKasus,Test interface,Simple,ID kasus,Ikuti langkah keyword case yang dirujuk; catat hasil terpisah.
+SimpanBukti,Test interface,Simple,ID; catatan,Simpan screenshot/log dengan ID kasus; sensor data sensitif dan isi actual result.
+KeluarAkun,Test interface,Simple,-,Klik Logout; periksa bahwa sesi berakhir pada halaman login.
+PeriksaHasil,Test interface,Simple,expected result,Bandingkan hasil aktual dengan expected result kasus; catat selisih dan status.
+SiapkanDataUji,Test interface,Simple,data awal,"Pastikan akun, stok, dan data dummy yang diperlukan tersedia pada staging; catat nilai awal."
+PulihkanDataUji,Test interface,Simple,data awal,Pulihkan snapshot database uji atau hapus data dummy sesuai izin setelah tes.
+MasukAkun,Domain,Composite,username; password,"BukaHalaman(Login) → IsiField(username, nilai uji) → IsiField(password, nilai uji) → KlikTombol(Login) → PeriksaHalaman(Dashboard, login berhasil)."
+CekTampilan,Domain,Composite,halaman; elemen,"BukaHalaman(halaman) → PeriksaElemen(elemen, tampil dan terbaca)."
+CekBatasStok,Domain,Composite,barang; batas; nilai uji,"PilihOpsi(Barang, barang) → PeriksaElemen(Jumlah Keluar, max=batas) → PeriksaValiditas(Jumlah Keluar, nilai uji, sesuai batas)."
+CekStokAntarHalaman,Domain,Composite,barang; kondisi,"BukaHalaman(Stok Barang) → PeriksaData(barang, stok) → BukaHalaman(Kelola Barang) → PeriksaData(barang, bandingkan stok pada kondisi sama)."

@@ -29,3 +29,5 @@ Rencana ini merupakan test case tambahan dan **tidak menambah jumlah PASS pada s
 - [ ] Bukti screenshot setiap REG-xxx setelah uji sungguhan.
 
 **Catatan:** keberhasilan pemeriksaan kode dan lint tidak membuktikan regresi fungsional bebas masalah atau keamanan sistem sepenuhnya.
+
+Revisi 28 November: REG-001–010 sekarang juga memiliki urutan keyword pada [lembar KDT](../test-cases/keyword-steps.csv). Status lama tetap tercatat; kolom eksekusi manual baru belum diisi.

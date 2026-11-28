@@ -25,3 +25,7 @@ Pembagian di bawah ini merupakan usulan untuk didiskusikan bersama. Nama PIC dan
 | | | | | |
 
 Setiap anggota mengisi catatan sesuai pekerjaan yang benar-benar dilakukan. Commit menggunakan akun GitHub masing-masing apabila anggota sudah menyelesaikan perubahan.
+
+## Pembagian kasus KDT (usulan)
+
+Anggota 1: TP-01; anggota 2: TP-02; anggota 3: TP-03 dan review kode; anggota 4: TP-04 dan kompilasi laporan. Review silang antarpengujian. Isi nama, tanggal dan hasil nyata setelah dikerjakan.

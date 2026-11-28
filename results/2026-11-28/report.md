@@ -36,3 +36,5 @@ Dari 10 rencana regression, 6 masih sebagian, 1 PASS melalui HTTP lokal, 1 PASS 
 Beberapa validasi sudah berjalan, tetapi akses pengguna dan proses transaksi masih perlu diperiksa lebih lanjut. Pengujian manual end-to-end belum selesai. Tahap berikutnya adalah menyiapkan database uji di XAMPP, mengulang skenario transaksi, memperbaiki temuan yang terbukti dan melengkapi wawancara QA.
 
 [Catatan teknis dan batasan pengujian](technical-notes.md).
+
+Revisi dokumentasi: acuan ISO/IEC/IEEE 29119-5:2024. Hasil komponen ini adalah hasil historis, tidak dihitung sebagai eksekusi manual KDT. Lihat [kasus baru](../../test-cases/keyword-test-cases.csv).

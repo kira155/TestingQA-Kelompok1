@@ -18,3 +18,5 @@
 | Kifa | 17 | 45 |
 
 Langkah cek ulang: buka kedua halaman dengan akun admin, pastikan tidak ada transaksi selama pengecekan, refresh, lalu cocokkan data per ID barang dan query perhitungan stok. Temuan D-06 dan D-07 bisa berkaitan dengan risiko D-03/D-04, tetapi akar penyebab belum dipastikan. Seluruh temuan screenshot dicatat terpisah dari lima temuan pengujian sebelumnya.
+
+Rencana uji ulang berbasis keyword: D-06 sampai D-09 → FU-006 sampai FU-009 (urutan sama). Lihat [keyword test cases](../test-cases/keyword-test-cases.csv). Status temuan tidak berubah.

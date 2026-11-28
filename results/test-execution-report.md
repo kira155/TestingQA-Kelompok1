@@ -12,7 +12,7 @@ TC-001 dan TC-002 memiliki hasil PASS dari pengujian terdahulu, tetapi tidak ter
 
 ## 2. Acuan Dokumentasi
 
-Laporan mengadaptasi unsur dokumentasi dari materi Stuart Reid, *ISO/IEC/IEEE 29119: The New International Software Testing Standards*: Part 2 (test processes), Part 3 (test documentation), dan Part 4 (test techniques). Materi Part 3 membahas antara lain test results, anomaly reports, test environment report, dan test level completion report. Dokumen ini bukan sertifikasi atau klaim kesesuaian penuh terhadap seluruh standar.
+Acuan proyek saat ini adalah ISO/IEC/IEEE 29119-5:2024, *Software and systems engineering — Software testing — Part 5: Keyword-driven testing*, edisi ke-2, Desember 2024. Hasil dalam laporan ini berasal dari sesi historis sebelum konversi keyword; bukan eksekusi KDT manual. Acuan yang tersedia adalah preview 14 halaman (sampai klausul 5.2.1). Klausul 6–8 dan lampiran hanya terlihat pada daftar isi. Kelompok menggunakan konsep yang dapat diperiksa pada klausul 3, 4 dan 5; belum mengklaim full maupun tailored conformance karena persyaratan klausul 7 belum dapat diperiksa.
 
 ## 3. Lingkungan Pengujian
 
@@ -151,4 +151,4 @@ Pada sesi gabungan tanggal 23 November 2026, seluruh 29 test yang dikumpulkan be
 
 ## Referensi
 
-Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards* [Artikel PDF yang diberikan].
+ISO/IEC/IEEE 29119-5:2024, *Software and systems engineering — Software testing — Part 5: Keyword-driven testing*, edisi ke-2, Desember 2024.

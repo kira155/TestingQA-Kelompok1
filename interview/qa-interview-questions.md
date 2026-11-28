@@ -31,3 +31,5 @@
 | 1 | ... | ... | ... |
 
 **Jangan membuat jawaban atau validasi narasumber secara fiktif.**
+
+Pertanyaan tambahan: Apakah keyword yang digunakan sudah jelas dan dapat dipakai ulang? Bagaimana narasumber memisahkan hasil uji manual dari otomatisasi dan menilai kecukupan bukti?

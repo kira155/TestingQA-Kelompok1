@@ -2,6 +2,9 @@
 
 ## 28 November 2026
 
+- Mengganti acuan menjadi ISO/IEC/IEEE 29119-5:2024.
+- Menyusun keyword library, 53 test case manual, langkah dan prosedur. Hasil lama dipertahankan; eksekusi ulang belum dilakukan.
+
 - Menambahkan 9 screenshot halaman website dan catatan perbedaan stok untuk dicek ulang.
 
 - Menambahkan hasil pemeriksaan lokal: 25 PASS dan 2 FAIL dari 27 skenario.

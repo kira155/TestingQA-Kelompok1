@@ -19,7 +19,7 @@ Website: https://axioo-production.my.id/cleaning/auth/login.php
 
 ## Metode pengujian
 
-Metode utama yang digunakan adalah Black Box dan White Box. Black Box berfokus pada input dan hasil yang ditampilkan aplikasi, sedangkan White Box melihat alur pada source code PHP. Pengujian ulang dilakukan setelah ada perubahan aplikasi. Sebagai pemeriksaan tambahan, digunakan Playwright dan script pengujian lokal.
+Metode utama yang digunakan adalah Black Box dan White Box. Black Box berfokus pada input dan hasil yang ditampilkan aplikasi, sedangkan White Box melihat alur pada source code PHP. Pengujian ulang dilakukan setelah ada perubahan aplikasi. Langkah test case disusun menggunakan keyword-driven testing sesuai acuan ISO/IEC/IEEE 29119-5:2024. Playwright dan script lokal adalah bukti pengujian tambahan yang sudah ada.
 
 ## Progres pengujian
 
@@ -60,4 +60,10 @@ Hasil 28 November berasal dari 3 uji HTTP biasa, 19 uji HTTP dengan database sim
 - [Screenshot](evidence/), [riwayat perubahan](docs/CHANGELOG.md), dan [rencana pembagian tugas](docs/pembagian-tugas.md)
 - [Pertanyaan wawancara QA](interview/qa-interview-questions.md)
 
-Acuan dokumentasi: ISO/IEC/IEEE 29119 berdasarkan artikel pengantar Stuart Reid (2013) yang tersedia. Referensi ini masih perlu dilengkapi sesuai ketentuan tahun referensi dari dosen. Proyek ini tidak mengklaim pemenuhan penuh standar tersebut.
+## Revisi acuan 28 November
+
+- [Keyword library](test-cases/keyword-library.csv), [53 test case manual](test-cases/keyword-test-cases.csv), [langkah keyword](test-cases/keyword-steps.csv), dan [test procedure](docs/test-procedures.md).
+- [Workbook Excel](test-cases/test-cases.xlsx) berisi kasus historis dan lembar KDT baru.
+- 30 kasus awal dan 10 regresi disusun ulang; 9 cek ulang defect dan 4 kasus end-to-end ditambahkan. Semua hasil manual baru masih NOT RUN. Hasil historis tetap dipisahkan.
+
+Acuan: ISO/IEC/IEEE 29119-5:2024, *Software and systems engineering — Software testing — Part 5: Keyword-driven testing*, edisi ke-2, Desember 2024. Acuan yang tersedia adalah preview 14 halaman (sampai klausul 5.2.1). Klausul 6–8 dan lampiran hanya terlihat pada daftar isi. Kelompok menggunakan konsep yang dapat diperiksa pada klausul 3, 4 dan 5; belum mengklaim full maupun tailored conformance karena persyaratan klausul 7 belum dapat diperiksa.
