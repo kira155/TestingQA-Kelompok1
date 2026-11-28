@@ -2,6 +2,8 @@
 
 ## 28 November 2026
 
+- Menambahkan 9 screenshot halaman website dan catatan perbedaan stok untuk dicek ulang.
+
 - Menambahkan hasil pemeriksaan lokal: 25 PASS dan 2 FAIL dari 27 skenario.
 - Mencatat 5 temuan dari pengecekan kode PHP. Dua temuan juga muncul pada pengujian lokal.
 - Memperbarui hasil pengujian ulang footer, registrasi dan navigasi.

@@ -28,17 +28,20 @@ Metode utama yang digunakan adalah Black Box dan White Box. Black Box berfokus p
 | 23 November 2026 | Pengujian fitur login, stok dan transaksi menggunakan Playwright | 29 PASS, 0 FAIL, 1 warning |
 | 24 November 2026 | Perubahan footer, registrasi dan navigasi; cek sintaks PHP | 27 file PHP lolos; uji fungsi belum lengkap |
 | 28 November 2026 | Pengujian komponen lokal dan pengecekan source code | 25 PASS, 2 FAIL; 5 temuan kode (2 di antaranya juga muncul saat pengujian lokal) |
+| 28 November 2026 | Dokumentasi tampilan 9 halaman website | 4 catatan untuk dicek ulang |
 
 Total daftar test case awal adalah 30. Tidak semuanya dijalankan pada sesi Playwright 23 November. Bukti khusus TC-002 belum ditemukan.
 
 ## Update terakhir
+
+Dari screenshot terbaru, tampilan sembilan halaman sudah didokumentasikan. Ada perbedaan angka stok antarhalaman dan beberapa hal yang perlu dicek ulang. [Catatan screenshot](results/2026-11-28/website-review.md).
 
 Pada pengujian lokal versi 24 November, terdapat dua skenario yang belum sesuai: akses halaman kelola user dan transaksi tanpa sesi login. Dari pengecekan kode, ada tiga risiko tambahan pada proses tambah barang, perubahan stok dan pencocokan permintaan barang.
 
 | Pekerjaan | Status |
 |---|---|
 | Test case awal | 30 skenario tersedia |
-| Black Box manual pada versi terbaru | Belum selesai |
+| Black Box manual pada versi terbaru | Dokumentasi tampilan tersedia; uji fungsi belum selesai |
 | White Box (review kode) | 10 pemeriksaan, 5 temuan |
 | Regression testing | Sebagian |
 | Perbaikan bug dan tes ulang | Belum dilakukan |
@@ -52,6 +55,7 @@ Hasil 28 November berasal dari 3 uji HTTP biasa, 19 uji HTTP dengan database sim
 - [Daftar test case (Excel)](test-cases/test-cases.xlsx) / [CSV](test-cases/test-cases.csv)
 - [Hasil pengujian awal](results/test-execution-report.md)
 - [Hasil pengujian 28 November](results/2026-11-28/report.md)
+- [Temuan screenshot terbaru](bug-reports/website-findings-2026-11-28.md)
 - [Daftar bug](bug-reports/defects-2026-11-28.md) dan [status regression](results/2026-11-28/regression-status.csv)
 - [Screenshot](evidence/), [riwayat perubahan](docs/CHANGELOG.md), dan [rencana pembagian tugas](docs/pembagian-tugas.md)
 - [Pertanyaan wawancara QA](interview/qa-interview-questions.md)

@@ -5,3 +5,5 @@
 - [Laporan Word pengujian awal](Test_Execution_Report.docx).
 
 Hasil terbaru belum mencakup pengujian manual end-to-end dengan MySQL.
+
+- [28 November 2026 – dokumentasi tampilan website](2026-11-28/website-review.md): sembilan screenshot dan catatan pengecekan lanjutan.
