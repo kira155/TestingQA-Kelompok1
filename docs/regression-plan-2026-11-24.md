@@ -2,7 +2,7 @@
 
 **Tanggal pembaruan source:** 24 November 2026  
 **Jenis perubahan:** UI footer, registrasi, pembatasan setup admin, navigasi mobile, dan redirect  
-**Status saat rencana disusun (24 November):** BELUM DIEKSEKUSI. Status terkini 28 November tersedia di [hasil regression](../results/2026-11-28/regression-status.csv); tabel di bawah adalah baseline historis. 
+**Status 24 November:** belum dijalankan. Untuk hasil terbaru, lihat [pengujian 28 November](../results/2026-11-28/regression-status.csv). Tabel ini adalah rencana awal. 
 
 Rencana ini merupakan test case tambahan dan **tidak menambah jumlah PASS pada sesi 23 November 2026**. Uji di staging dengan akun dan database uji sebelum deploy ke produksi. Jangan memakai akun pengguna nyata tanpa izin.
 
