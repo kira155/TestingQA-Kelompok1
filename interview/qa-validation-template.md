@@ -22,7 +22,7 @@
 
 | Aspek | Penerapan pada tugas | Praktik menurut narasumber | Perbaikan |
 |---|---|---|---|
-| Perencanaan | ISO/IEC/IEEE 29119-2:2021 + rencana manual | [isi dari wawancara] | [isi] |
+| Perencanaan | ISO/IEC 25002:2024 + manual test plan | [isi dari wawancara] | [isi] |
 | Pemilihan test | Risiko, fitur publik | [isi] | [isi] |
 | Manajemen bug | Markdown bug report | [isi] | [isi] |
 | Reporting | Test execution report | [isi] | [isi] |

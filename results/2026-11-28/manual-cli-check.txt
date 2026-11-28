@@ -1,0 +1,5 @@
+Command: php scripts/create_admin.php (environment credentials empty)
+Exit code: 1
+Gagal: set CLEANING_ADMIN_USER (min. 3 karakter) dan CLEANING_ADMIN_PASSWORD (min. 8 karakter).
+
+Expected exit 1. This is a supplemental CLI validation, not counted in 27 cases.

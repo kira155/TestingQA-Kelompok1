@@ -12,11 +12,3 @@ ISO_IEC_25002_2024*.pdf
 __pycache__/
 .pytest_cache/
 .venv/
-
-# Data operasional dan kredensial lokal
-*.sql.gz
-*cleaning_service*.sql
-.env
-.env.*
-!cleaning/database/schema.sql
-!cleaning/database/demo_data.sql

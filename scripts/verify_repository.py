@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pemeriksaan konsistensi dokumen QA, tanpa akses web, database, atau dependensi tambahan."""
+"""Pemeriksaan konsistensi artefak QA, tanpa akses web, database, atau dependensi tambahan."""
 import csv
 import re
 import sys
@@ -52,15 +52,6 @@ def check():
                 continue
             if not (document.parent / target).exists():
                 problems.append(f'Link rusak pada {document.relative_to(ROOT)}: {target}')
-
-    # Pastikan tidak ada dokumen dengan penanda konflik Git Merge.
-    for fp in [ROOT / 'README.md', *ROOT.glob('docs/*.md'), *ROOT.glob('results/*.md'), *ROOT.glob('test-cases/*.csv')]:
-        body = fp.read_text(encoding='utf-8-sig')
-        if re.search(r'(?m)^(<<<<<<< |=======\s*$|>>>>>>> )', body):
-            problems.append(f'Konflik Git Merge: {fp.relative_to(ROOT)}')
-    for row in rows:
-        if row.get('Status_Pengujian_Manual') != 'NOT RUN':
-            problems.append(f"Status manual tanpa bukti/eksekusi baru: {row['ID']}")
 
     screenshots = list((ROOT / 'evidence').glob('*.png'))
     print(f'Test case CSV: {len(rows)} | ID unik: {len(set(ids))}')

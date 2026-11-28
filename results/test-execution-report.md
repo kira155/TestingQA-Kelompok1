@@ -4,11 +4,9 @@
 **Aplikasi:** Cleaning Service Stock Management  
 **URL pengujian:** https://axioo-production.my.id/cleaning/auth/login.php
 
-**Catatan:** hasil berikut berasal dari sesi Playwright/pytest. Pengujian manual dan regresi versi 25 November 2026 belum dilakukan.
+## 1. Ringkasan Eksekutif
 
-## 1. Ringkasan Hasil
-
-Sesi pengujian sebelumnya mencatat **29 passed, 0 failed, 0 skipped, dan 1 warning** dengan durasi **313,65 detik (5 menit 13,65 detik)**. Rekap tersebut hanya berlaku untuk 29 test dalam sesi gabungan.
+Eksekusi gabungan menghasilkan **29 passed, 0 failed, 0 skipped, dan 1 warning** dalam **313,65 detik (5 menit 13,65 detik)**. Angka ini hanya mencakup 29 test yang dikumpulkan pada sesi gabungan.
 
 TC-001 dan TC-002 memiliki hasil PASS dari pengujian terdahulu, tetapi tidak termasuk dalam sesi gabungan. TC-002 masih memerlukan konfirmasi bukti screenshot khusus. Karena itu, 30 skenario memiliki catatan hasil PASS, tetapi bukan berarti 30 test dijalankan dalam satu sesi.
 
@@ -36,7 +34,7 @@ Laporan mengadaptasi unsur dokumentasi dari materi Stuart Reid, *ISO/IEC/IEEE 29
 
 Ruang lingkup meliputi login, dashboard, stok barang, filter dan pencarian, navigasi transaksi, form permintaan barang, halaman barang masuk/keluar, serta validasi form dan batas maksimum stok. Metode yang digunakan adalah black-box testing melalui Playwright dan pytest. Boundary Value Analysis digunakan pada pengujian jumlah dan batas stok; inspeksi antarmuka digunakan untuk memeriksa elemen, menu, tabel, input, dropdown, dan textarea.
 
-Pengujian validasi form pada sesi ini terutama memeriksa elemen, atribut HTML, dan validitas browser. Karena fokusnya pada antarmuka, pengujian ini belum cukup untuk memastikan bahwa validasi server dan penyimpanan transaksi berjalan dengan benar.
+Pengujian validasi form pada sesi ini terutama memeriksa elemen, atribut HTML, dan validitas browser. Hasil tersebut tidak otomatis membuktikan validasi sisi server atau keberhasilan penyimpanan transaksi.
 
 ## 5. Ringkasan Hasil Eksekusi
 
@@ -153,4 +151,4 @@ Pada sesi gabungan tanggal 23 November 2026, seluruh 29 test yang dikumpulkan be
 
 ## Referensi
 
-Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards*.
+Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards* [Artikel PDF yang diberikan].

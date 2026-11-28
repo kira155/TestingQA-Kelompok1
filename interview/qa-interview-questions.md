@@ -30,4 +30,4 @@
 |---:|---|---|---|
 | 1 | ... | ... | ... |
 
-Jawaban dan validasi dicatat setelah wawancara.
+**Jangan membuat jawaban atau validasi narasumber secara fiktif.**

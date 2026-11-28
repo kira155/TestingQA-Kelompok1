@@ -2,7 +2,7 @@
 
 **Tanggal pembaruan source:** 24 November 2026  
 **Jenis perubahan:** UI footer, registrasi, pembatasan setup admin, navigasi mobile, dan redirect  
-**Status pengujian fungsional (server/browser):** **BELUM DIEKSEKUSI** untuk versi terbaru. 
+**Status saat rencana disusun (24 November):** BELUM DIEKSEKUSI. Status terkini 28 November tersedia di [hasil regression](../results/2026-11-28/regression-status.csv); tabel di bawah adalah baseline historis. 
 
 Rencana ini merupakan test case tambahan dan **tidak menambah jumlah PASS pada sesi 23 November 2026**. Uji di staging dengan akun dan database uji sebelum deploy ke produksi. Jangan memakai akun pengguna nyata tanpa izin.
 
@@ -29,21 +29,3 @@ Rencana ini merupakan test case tambahan dan **tidak menambah jumlah PASS pada s
 - [ ] Bukti screenshot setiap REG-xxx setelah uji sungguhan.
 
 **Catatan:** keberhasilan pemeriksaan kode dan lint tidak membuktikan regresi fungsional bebas masalah atau keamanan sistem sepenuhnya.
-
-
-## Tambahan regression untuk perubahan source 25 November 2026 (semua NOT RUN)
-
-| ID | Area | Expected | Prioritas | Status |
-|---|---|---|---|---|
-| REG-011 | Auth endpoint transaksi | POST tanpa sesi ditolak dan tidak menambah transaksi | Critical | NOT RUN |
-| REG-012 | CSRF form | POST tanpa token/invalid ditolak, token valid diterima | Critical | NOT RUN |
-| REG-013 | Saldo awal barang baru | `stok_awal=5` menghasilkan `stok_sekarang=5` | Critical | NOT RUN |
-| REG-014 | Rekap master barang | 2 transaksi dan 2 permintaan tidak menggandakan SUM | High | NOT RUN |
-| REG-015 | Hapus barang historis | Penghapusan barang yang punya transaksi/permintaan ditolak | Critical | NOT RUN |
-| REG-016 | Request ID yang mirip | REQ-1 tidak menghitung REQ-11 atau sebaliknya | High | NOT RUN |
-| REG-017 | Dua request stok keluar | Stok tidak dapat menjadi negatif saat request bersamaan | Critical | NOT RUN |
-| REG-018 | Penerimaan request paralel | Qty terima tidak melebihi qty permintaan | Critical | NOT RUN |
-| REG-019 | Trigger update transaksi | Perubahan qty, jenis, atau id_barang mengubah ledger secara benar | Critical | NOT RUN |
-| REG-020 | Audit cleaning data | Tombol pembersihan tidak menghapus transaksi; laporan memberi petunjuk | High | NOT RUN |
-
-**Status:** patch PHP dan migration tersedia secara offline; **tidak ada test integrasi MariaDB/browser yang dijalankan**.

@@ -1,0 +1,2 @@
+HTTP 403
+403 - Script setup hanya dapat dijalankan melalui CLI.

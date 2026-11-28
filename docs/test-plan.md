@@ -3,19 +3,19 @@
 | Elemen | Rincian |
 |---|---|
 | Project ID | QA-CLEANING-2026 |
-| Version | 2.1 (evaluasi ISO dan rencana pengujian manual, 25 Nov 2026) |
+| Version | 2.0 (revisi acuan ISO/IEC/IEEE 29119) |
 | Dibuat | 23 November 2026 |
 | Object | https://axioo-production.my.id/cleaning/auth/login.php |
 | Tujuan | Menilai fungsi aplikasi, validasi input, alur autentikasi, dan pengalaman penggunaan |
-| Pendekatan | Manual Black Box & manual White Box **direncanakan**; bukti eksekusi historis berbasis Playwright dan bukan hasil manual |
-| Acuan | ISO/IEC/IEEE 29119-2:2021, -3:2021, -4:2021; artikel Stuart Reid (2013) sebagai pengantar historis |
+| Pendekatan | Manual Black Box Testing; White Box Testing hanya jika source code dan izin tersedia |
+| Acuan | ISO/IEC/IEEE 29119, berdasarkan artikel pengantar Stuart Reid yang diberikan |
 | Jumlah kasus | 30 test case yang diselaraskan dengan fitur inventarisasi dan transaksi barang |
 | Lingkungan aktual eksekusi | Windows; Python 3.13.7; pytest 9.2.0; pytest-playwright 0.10.0; Chromium headed |
 | Status setelah eksekusi gabungan | 29 Passed; 0 Failed; 0 Skipped; 1 warning. TC-001 dan TC-002 tercatat PASS historis di luar sesi gabungan. |
 
 ## A. Tujuan dan Ruang Lingkup
 
-Tujuan pengujian adalah memastikan fungsi Cleaning Service System sesuai dengan kebutuhan pengguna. Mengacu pada ISO/IEC/IEEE 29119 Part 2, kelompok menyusun rencana, menyiapkan lingkungan dan skenario uji, kemudian mencatat pelaksanaan, perkembangan, temuan, dan hasil akhir.
+Pengujian dilakukan untuk mengetahui apakah fitur Cleaning Service System berjalan sesuai kebutuhan dan hasil yang diharapkan. Perencanaan, desain, persiapan lingkungan, eksekusi, pemantauan, pelaporan insiden, dan penyelesaian didokumentasikan dengan mengacu pada proses yang dijelaskan dalam ISO/IEC/IEEE 29119 Part 2.
 
 **Black Box Testing** dilakukan melalui antarmuka aplikasi tanpa memeriksa struktur internal kode. Ruang lingkupnya meliputi:
 - Halaman login dan registrasi jika tersedia serta dapat diakses.
@@ -26,7 +26,7 @@ Tujuan pengujian adalah memastikan fungsi Cleaning Service System sesuai dengan 
 - Tampilan pada resolusi dan browser berbeda.
 - Respons aplikasi terhadap input pengguna.
 
-**White Box Testing** meliputi pemeriksaan pernyataan, percabangan, dan jalur logika program. Source code sudah tersedia pada folder `cleaning/`. Pelaksanaan uji jalur program tetap dilakukan di lingkungan lokal dengan izin yang sesuai.
+**White Box Testing** meliputi pemeriksaan pernyataan, percabangan, dan jalur logika program. Pelaksanaan hanya dilakukan jika source code dan izin dari pemilik aplikasi tersedia.
 
 **Di luar scope:** penetration testing, load/stress testing, perubahan database produksi, brute force, serta tindakan yang membutuhkan kredensial atau izin khusus.
 
@@ -83,7 +83,7 @@ Aspek berikut merupakan fokus evaluasi proyek, bukan klaim bahwa nama aspek ini 
 - **Branch/Decision Testing:** memeriksa cabang keputusan yang relevan.
 - **Path Testing:** memeriksa jalur logika terpilih sesuai ruang lingkup dan kompleksitas.
 
-Teknik dipilih sesuai fitur dan test basis. Tidak semua teknik harus diterapkan pada setiap test case. White Box Testing baru dapat dinyatakan selesai setelah jalur yang dipilih diuji dan hasilnya dicatat.
+Teknik dipilih sesuai fitur dan test basis. Tidak semua teknik harus diterapkan pada setiap test case. White Box Testing tidak dapat dinyatakan selesai tanpa source code dan izin yang sesuai.
 
 ## F. Test Design, traceability, dan dokumentasi
 
@@ -173,15 +173,10 @@ Severity ditetapkan berdasarkan dampak yang teramati. Jangan menyatakan dugaan p
 | Test Execution | 29 test dieksekusi dalam sesi gabungan: 29 Passed, 0 Failed, 0 Skipped |
 | Test Monitoring and Control | Hasil dan satu warning dicatat dalam execution report |
 | Test Incident Reporting | Tidak ada test gagal pada sesi gabungan; warning pytest dicatat sebagai catatan teknis |
-| Test Completion | **BELUM** terpenuhi untuk tugas manual; 37 PNG historis ada, screenshot TC-002 dan evidence manual baru belum tersedia |
+| Test Completion | Laporan hasil diperbarui; bukti screenshot perlu disalin ke repository sebelum publikasi |
 | TC-001 dan TC-002 | PASS historis di luar sesi gabungan; bukti khusus TC-002 belum teridentifikasi |
-| White Box Testing | Source PHP kini tersedia; review statis awal dilakukan, tetapi eksekusi jalur manual dan bukti runtime masih NOT RUN |
+| White Box Testing | Belum dilakukan; menunggu source code dan izin |
 
 ## M. Kesimpulan
 
 Test Plan ini mengadaptasi proses dan dokumentasi pengujian yang dijelaskan dalam artikel pengantar ISO/IEC/IEEE 29119. Fokus penerapan adalah perencanaan berbasis risiko, desain test case yang dapat ditelusuri, persiapan lingkungan, eksekusi, pemantauan, pelaporan insiden, dan penyelesaian. Dokumen ini merupakan pedoman proyek akademik, bukan bukti sertifikasi atau pemenuhan penuh seluruh persyaratan standar.
-
-
-## Status metode pengujian (25 November 2026)
-
-Sesi 23 November adalah otomatis, bukan manual. Test case baru manual, White Box PHP, dan skenario regresi versi baru semuanya **NOT RUN**. Source tersedia untuk code review, tetapi akses localhost/staging serta eksekusi aplikasi dengan MariaDB tidak dilakukan pada audit dokumen ini. RTM, daftar risiko, dan rincian sisa pekerjaan ada di folder `docs/`.

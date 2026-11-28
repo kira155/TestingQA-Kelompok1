@@ -1,0 +1,11 @@
+﻿ID,Source location,Review,Result,Evidence or limitation
+WB-01,auth/login.php:21–53,"Input kosong, pengguna tidak ditemukan, kata sandi benar/salah; prepared statement, password_verify dan regenerasi sesi",Sesuai inspeksi,BB-04–07
+WB-02,auth/register.php:17–62,Role selalu staff; batas panjang dan konfirmasi; password di-hash,Sesuai inspeksi,BB-08–13; hash disembunyikan dalam log
+WB-03,scripts/create_admin.php:11–23,Guard CLI dan validasi panjang sebelum koneksi,Sesuai inspeksi,BB-02; manual-cli-check.txt
+WB-04,actions/transaksi_action.php:34–63,"Jenis, kuantitas dan batas stok divalidasi",Sesuai inspeksi,BB-16–20; stok simulasi 10
+WB-05,actions/permintaan_action.php:26–36,ID dan kuantitas permintaan divalidasi,Sesuai inspeksi,BB-21
+WB-06,"actions/transaksi_action.php:2–11, 65–74",Tidak ada requireLogin sebelum input transaksi; id_user dapat null,Temuan D-01,BB-22; INSERT dipanggil dengan id_user null; penyimpanan nyata tidak dibuktikan
+WB-07,pages/users.php:3–10; middleware/auth.php:21–31,requireAdmin setelah header/sidebar; respons 403 dapat gagal setelah output,Temuan D-02,BB-15; status 200 dengan teks penolakan
+WB-08,actions/barang_action.php:66–89,Tambah barang bind_param sssiss padahal satuan string dan stok integer; stok negatif tidak ditolak saat tambah,Temuan D-03,Inspeksi statis; perlu uji database nyata
+WB-09,actions/transaksi_action.php:50–75,"Pengecekan stok, INSERT dan update stok tanpa transaksi/locking atomik",Temuan D-04,Risiko kondisi balapan dan ketidakkonsistenan; belum diuji concurrency
+WB-10,actions/permintaan_action.php:90–106; pages/permintaan.php:34–37,LIKE %REQ-id% dapat mencocokkan ID dengan prefix sama,Temuan D-05,Inspeksi statis; perlu data uji dua ID yang berawalan sama

@@ -1,0 +1,27 @@
+{'ID': 'BB-01', 'Method': 'HTTP native', 'Area': 'Root', 'Expected': '302 ke login', 'Actual': '302 /cleaning/auth/login.php', 'Status': 'PASS'}
+{'ID': 'BB-02', 'Method': 'HTTP native', 'Area': 'Setup admin HTTP', 'Expected': '403', 'Actual': '403 403 - Script setup hanya dapat dijalankan melalui CLI.', 'Status': 'PASS'}
+{'ID': 'BB-03', 'Method': 'HTTP native', 'Area': 'Logout redirect', 'Expected': '302 ke login?logout=success', 'Actual': '302 /cleaning/auth/login.php?logout=success', 'Status': 'PASS'}
+{'ID': 'BB-04', 'Method': 'HTTP fixture', 'Area': 'Login', 'Expected': 'Username dan password wajib diisi!', 'Actual': 'HTTP 200; pesan ditemukan=True', 'Status': 'PASS'}
+{'ID': 'BB-05', 'Method': 'HTTP fixture', 'Area': 'Login', 'Expected': 'Password salah!', 'Actual': 'HTTP 200; pesan ditemukan=True', 'Status': 'PASS'}
+{'ID': 'BB-06', 'Method': 'HTTP fixture', 'Area': 'Login', 'Expected': 'Username tidak ditemukan!', 'Actual': 'HTTP 200; pesan ditemukan=True', 'Status': 'PASS'}
+{'ID': 'BB-07', 'Method': 'HTTP fixture', 'Area': 'Login benar', 'Expected': '302 dashboard; sesi staff', 'Actual': '302 /cleaning/pages/dashboard.php; role staff=True', 'Status': 'PASS'}
+{'ID': 'BB-08', 'Method': 'HTTP fixture', 'Area': 'Registrasi', 'Expected': 'Username minimal 3 karakter!', 'Actual': 'HTTP 200; pesan ditemukan=True', 'Status': 'PASS'}
+{'ID': 'BB-09', 'Method': 'HTTP fixture', 'Area': 'Registrasi', 'Expected': 'Password minimal 6 karakter!', 'Actual': 'HTTP 200; pesan ditemukan=True', 'Status': 'PASS'}
+{'ID': 'BB-10', 'Method': 'HTTP fixture', 'Area': 'Registrasi', 'Expected': 'Konfirmasi password tidak cocok!', 'Actual': 'HTTP 200; pesan ditemukan=True', 'Status': 'PASS'}
+{'ID': 'BB-11', 'Method': 'HTTP fixture', 'Area': 'Registrasi', 'Expected': 'Username sudah terdaftar!', 'Actual': 'HTTP 200; pesan ditemukan=True', 'Status': 'PASS'}
+{'ID': 'BB-12', 'Method': 'HTTP fixture', 'Area': 'Registrasi role', 'Expected': 'INSERT role staff; respons berhasil (simulasi)', 'Actual': 'HTTP 200; parameter INSERT role=staff', 'Status': 'PASS'}
+{'ID': 'BB-13', 'Method': 'HTTP fixture', 'Area': 'Registrasi role', 'Expected': 'INSERT role staff; respons berhasil (simulasi)', 'Actual': 'HTTP 200; parameter INSERT role=staff', 'Status': 'PASS'}
+{'ID': 'BB-14', 'Method': 'HTTP fixture', 'Area': 'Register saat login', 'Expected': '302 dashboard', 'Actual': '302 /cleaning/pages/dashboard.php', 'Status': 'PASS'}
+{'ID': 'BB-15', 'Method': 'HTTP fixture', 'Area': 'Staff ke Kelola User', 'Expected': '403', 'Actual': 'HTTP 200; penolakan=True', 'Status': 'FAIL'}
+{'ID': 'BB-16', 'Method': 'HTTP fixture', 'Area': 'Validasi transaksi', 'Expected': 'Data tidak lengkap; tidak INSERT', 'Actual': 'HTTP 302; pesan=True; INSERT=0', 'Status': 'PASS'}
+{'ID': 'BB-17', 'Method': 'HTTP fixture', 'Area': 'Validasi transaksi', 'Expected': 'Data tidak lengkap; tidak INSERT', 'Actual': 'HTTP 302; pesan=True; INSERT=0', 'Status': 'PASS'}
+{'ID': 'BB-18', 'Method': 'HTTP fixture', 'Area': 'Validasi transaksi', 'Expected': 'Stok tidak mencukupi; tidak INSERT', 'Actual': 'HTTP 302; pesan=True; INSERT=0', 'Status': 'PASS'}
+{'ID': 'BB-19', 'Method': 'HTTP fixture', 'Area': 'Validasi transaksi', 'Expected': 'Barang keluar berhasil dicatat; INSERT dipanggil', 'Actual': 'HTTP 302; pesan=True; INSERT=1', 'Status': 'PASS'}
+{'ID': 'BB-20', 'Method': 'HTTP fixture', 'Area': 'Validasi transaksi', 'Expected': 'Jenis transaksi tidak valid; tidak INSERT', 'Actual': 'HTTP 302; pesan=True; INSERT=0', 'Status': 'PASS'}
+{'ID': 'BB-21', 'Method': 'HTTP fixture', 'Area': 'Permintaan qty 0', 'Expected': 'Data tidak lengkap', 'Actual': 'HTTP 302; pesan=True', 'Status': 'PASS'}
+{'ID': 'BB-22', 'Method': 'HTTP fixture', 'Area': 'Transaksi tanpa sesi', 'Expected': 'Redirect login sebelum INSERT', 'Actual': 'HTTP 302; tujuan=/cleaning/pages/transaksi_masuk.php; INSERT dipanggil=True', 'Status': 'FAIL'}
+{'ID': 'BB-23', 'Method': 'Offline DOM fixture', 'Area': 'Footer login', 'Expected': 'Brand baru dan tanpa kredit kelompok', 'Actual': 'brand=True; kredit lama=False', 'Status': 'PASS'}
+{'ID': 'BB-24', 'Method': 'Offline DOM fixture', 'Area': 'Footer transaksi', 'Expected': 'Footer dalam viewport 375px dan tanpa overflow internal', 'Actual': "{'left': 8, 'right': 367, 'scroll': 359, 'client': 359}", 'Status': 'PASS'}
+{'ID': 'BB-25', 'Method': 'Offline DOM fixture', 'Area': 'Footer transaksi', 'Expected': 'Footer dalam viewport 768px dan tanpa overflow internal', 'Actual': "{'left': 248, 'right': 760, 'scroll': 512, 'client': 512}", 'Status': 'PASS'}
+{'ID': 'BB-26', 'Method': 'Offline DOM fixture', 'Area': 'Footer transaksi', 'Expected': 'Footer dalam viewport 1280px dan tanpa overflow internal', 'Actual': "{'left': 248, 'right': 1272, 'scroll': 1024, 'client': 1024}", 'Status': 'PASS'}
+{'ID': 'BB-27', 'Method': 'Offline DOM fixture', 'Area': 'Sidebar mobile', 'Expected': 'true saat buka, false setelah Escape dan klik luar', 'Actual': 'true, false, false', 'Status': 'PASS'}

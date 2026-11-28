@@ -1,0 +1,28 @@
+ID,Method,Area,Expected,Actual,Status
+BB-01,HTTP native,Root,302 ke login,302 /cleaning/auth/login.php,PASS
+BB-02,HTTP native,Setup admin HTTP,403,403 403 - Script setup hanya dapat dijalankan melalui CLI.,PASS
+BB-03,HTTP native,Logout redirect,302 ke login?logout=success,302 /cleaning/auth/login.php?logout=success,PASS
+BB-04,HTTP fixture,Login,Username dan password wajib diisi!,HTTP 200; pesan ditemukan=True,PASS
+BB-05,HTTP fixture,Login,Password salah!,HTTP 200; pesan ditemukan=True,PASS
+BB-06,HTTP fixture,Login,Username tidak ditemukan!,HTTP 200; pesan ditemukan=True,PASS
+BB-07,HTTP fixture,Login benar,302 dashboard; sesi staff,302 /cleaning/pages/dashboard.php; role staff=True,PASS
+BB-08,HTTP fixture,Registrasi,Username minimal 3 karakter!,HTTP 200; pesan ditemukan=True,PASS
+BB-09,HTTP fixture,Registrasi,Password minimal 6 karakter!,HTTP 200; pesan ditemukan=True,PASS
+BB-10,HTTP fixture,Registrasi,Konfirmasi password tidak cocok!,HTTP 200; pesan ditemukan=True,PASS
+BB-11,HTTP fixture,Registrasi,Username sudah terdaftar!,HTTP 200; pesan ditemukan=True,PASS
+BB-12,HTTP fixture,Registrasi role,INSERT role staff; respons berhasil (simulasi),HTTP 200; parameter INSERT role=staff,PASS
+BB-13,HTTP fixture,Registrasi role,INSERT role staff; respons berhasil (simulasi),HTTP 200; parameter INSERT role=staff,PASS
+BB-14,HTTP fixture,Register saat login,302 dashboard,302 /cleaning/pages/dashboard.php,PASS
+BB-15,HTTP fixture,Staff ke Kelola User,403,HTTP 200; penolakan=True,FAIL
+BB-16,HTTP fixture,Validasi transaksi,Data tidak lengkap; tidak INSERT,HTTP 302; pesan=True; INSERT=0,PASS
+BB-17,HTTP fixture,Validasi transaksi,Data tidak lengkap; tidak INSERT,HTTP 302; pesan=True; INSERT=0,PASS
+BB-18,HTTP fixture,Validasi transaksi,Stok tidak mencukupi; tidak INSERT,HTTP 302; pesan=True; INSERT=0,PASS
+BB-19,HTTP fixture,Validasi transaksi,Barang keluar berhasil dicatat; INSERT dipanggil,HTTP 302; pesan=True; INSERT=1,PASS
+BB-20,HTTP fixture,Validasi transaksi,Jenis transaksi tidak valid; tidak INSERT,HTTP 302; pesan=True; INSERT=0,PASS
+BB-21,HTTP fixture,Permintaan qty 0,Data tidak lengkap,HTTP 302; pesan=True,PASS
+BB-22,HTTP fixture,Transaksi tanpa sesi,Redirect login sebelum INSERT,HTTP 302; tujuan=/cleaning/pages/transaksi_masuk.php; INSERT dipanggil=True,FAIL
+BB-23,Offline DOM fixture,Footer login,Brand baru dan tanpa kredit kelompok,brand=True; kredit lama=False,PASS
+BB-24,Offline DOM fixture,Footer transaksi,Footer dalam viewport 375px dan tanpa overflow internal,"{'left': 8, 'right': 367, 'scroll': 359, 'client': 359}",PASS
+BB-25,Offline DOM fixture,Footer transaksi,Footer dalam viewport 768px dan tanpa overflow internal,"{'left': 248, 'right': 760, 'scroll': 512, 'client': 512}",PASS
+BB-26,Offline DOM fixture,Footer transaksi,Footer dalam viewport 1280px dan tanpa overflow internal,"{'left': 248, 'right': 1272, 'scroll': 1024, 'client': 1024}",PASS
+BB-27,Offline DOM fixture,Sidebar mobile,"true saat buka, false setelah Escape dan klik luar","true, false, false",PASS

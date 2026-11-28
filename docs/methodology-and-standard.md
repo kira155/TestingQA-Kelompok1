@@ -1,12 +1,12 @@
 # Pemetaan Metodologi Pengujian ke ISO/IEC/IEEE 29119
 
-**Acuan dokumen:** Stuart Reid, *ISO/IEC/IEEE 29119: The New International Software Testing Standards*. Dokumen ini merupakan artikel pengantar yang menjelaskan struktur dan isi keluarga standar ISO/IEC/IEEE 29119; bukan salinan lengkap teks normatif standar.
+**Acuan dokumen:** Stuart Reid, *ISO/IEC/IEEE 29119: The New International Software Testing Standards* (PDF yang diberikan). Dokumen ini merupakan artikel pengantar yang menjelaskan struktur dan isi keluarga standar ISO/IEC/IEEE 29119; bukan salinan lengkap teks normatif standar.
 
 ## 1. Posisi standar dalam proyek
 
 Proyek ini menggunakan ISO/IEC/IEEE 29119 sebagai acuan proses, dokumentasi, dan teknik pengujian perangkat lunak. Pemilihan Black Box Testing dan White Box Testing merupakan pendekatan pengujian proyek. Standar 29119 menyediakan kerangka proses, dokumentasi, dan teknik desain/pengukuran pengujian; standar tersebut tidak berarti bahwa setiap proyek wajib memakai seluruh teknik yang disebutkan.
 
-Menurut Reid, keluarga ISO/IEC/IEEE 29119 terdiri dari:
+Menurut artikel pada PDF, keluarga ISO/IEC/IEEE 29119 terdiri dari:
 - **Part 1 — Concepts and Vocabulary:** konsep dasar, definisi, model siklus hidup, serta peran dan tanggung jawab pengujian.
 - **Part 2 — Test Processes:** proses pengujian pada tingkat organisasi, manajemen pengujian, dan pengujian dinamis.
 - **Part 3 — Test Documentation:** jenis dan isi dokumentasi pengujian.
@@ -16,7 +16,7 @@ Menurut Reid, keluarga ISO/IEC/IEEE 29119 terdiri dari:
 
 ## 2. Pemetaan ke pekerjaan kelompok
 
-| Bagian/acuan | Isi standar menurut Reid | Penerapan pada proyek |
+| Bagian/acuan | Pokok yang dijelaskan dalam PDF | Penerapan pada proyek |
 |---|---|---|
 | Part 1 | Konsep, istilah, model siklus hidup, peran dan tanggung jawab | Menyamakan istilah test plan, test case, test result, defect/incident, tester, dan ruang lingkup |
 | Part 2 — Organizational Test Process | Kebijakan dan strategi pengujian tingkat organisasi | Dicatat sebagai konteks acuan; proyek tugas kelompok tidak membuat kebijakan organisasi formal |
@@ -98,7 +98,7 @@ Setiap test case sebaiknya dapat ditelusuri ke fitur, kebutuhan, atau test basis
 
 ## 7. Batasan interpretasi
 
-- Artikel Stuart Reid adalah artikel pengantar tentang ISO/IEC/IEEE 29119, bukan keseluruhan dokumen normatif standar.
+- PDF yang diberikan adalah artikel pengantar tentang ISO/IEC/IEEE 29119, bukan keseluruhan dokumen normatif standar.
 - Pemetaan ini menunjukkan penggunaan konsep dan struktur yang dijelaskan dalam artikel; bukan sertifikasi atau pernyataan bahwa proyek telah sepenuhnya memenuhi seluruh persyaratan ISO/IEC/IEEE 29119.
 - Artikel menjelaskan Part 2 sebagai proses pengujian dinamis. Artikel juga menyebut bahwa proses pengujian statis belum tercakup dalam model Part 2 yang dibahas saat itu.
 - Black Box dan White Box adalah pendekatan yang dipilih tim. Teknik yang digunakan harus disesuaikan dengan test basis, risiko, akses, dan karakteristik fitur.
@@ -106,9 +106,4 @@ Setiap test case sebaiknya dapat ditelusuri ke fitur, kebutuhan, atau test basis
 
 ## Referensi
 
-Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards*.
-
-
-## Catatan versi dan interpretasi
-
-Materi Stuart Reid dalam lampiran menjelaskan versi awal ISO 29119 (2013). Untuk laporan proyek 2026, rujukan katalog ISO yang dapat diverifikasi adalah ISO/IEC/IEEE 29119-2:2021, -3:2021, dan -4:2021. Pemetaan dalam proyek ini bersifat adaptasi praktis (tailoring) tanpa audit kesesuaian formal. Perbedaan manual vs otomatis harus dilaporkan pada level setiap test case.
+Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards* [Artikel PDF yang diberikan].

@@ -1,65 +1,143 @@
-# Cleaning Stock Management – Software Testing
+# Pengujian Website Cleaning Service System
 
-Proyek mata kuliah Testing & Quality Assurance, Universitas Pamulang.
+**Tugas Kelompok 1 – Testing & Quality Assurance**  
+Program Studi Teknik Informatika, Universitas Pamulang
 
-## Kelompok 1
+## Anggota kelompok
 
-Anggota: Abdul Kholik (231011400097), Ahmad Reza (231011403385), Akbar Rusmanto (231011401424), Adjie Febrianto (231011400092).
+| No. | Nama | NIM |
+|---|---|---|
+| 1 | Abdul Kholik | 231011400097 |
+| 2 | Ahmad Reza | 231011403385 |
+| 3 | Akbar Rusmanto | 231011401424 |
+| 4 | Adjie Febrianto | 231011400092 |
 
-## Aplikasi
+## Objek pengujian
 
-Cleaning Stock Management adalah aplikasi PHP dan MariaDB untuk mengelola persediaan, permintaan barang, serta transaksi masuk dan keluar. Pengujian difokuskan pada login, hak akses, validasi input dan ketepatan saldo stok.
+**Cleaning Service System**, aplikasi web untuk pengelolaan persediaan barang dan transaksi operasional cleaning service.
 
-## Metode pengujian
+Website: https://axioo-production.my.id/cleaning/auth/login.php
 
-- Black Box: pengujian fungsi, validasi input, Equivalence Partitioning dan Boundary Value Analysis.
-- White Box: pemeriksaan alur program, kondisi dan percabangan.
-- Regression Testing: pemeriksaan ulang fungsi setelah perubahan kode.
+## Tujuan
 
-Perencanaan, dokumentasi dan teknik pengujian mengacu pada ISO/IEC/IEEE 29119 Part 2, 3 dan 4.
+Menguji fungsi antarmuka, autentikasi, navigasi, tampilan stok, filter dan pencarian barang, form permintaan barang, serta halaman dan validasi transaksi barang masuk/keluar. Hasil dicatat berdasarkan actual result dan evidence yang tersedia.
 
-## Status pengujian
+## Metode dan acuan
+
+- **Black Box Testing** melalui antarmuka aplikasi.
+- **Automated UI Testing** menggunakan Playwright dan pytest pada browser Chromium.
+- **Boundary Value Analysis** untuk validasi jumlah dan batas maksimum stok.
+- **Equivalence Partitioning** untuk variasi input valid/tidak valid.
+- **State Transition Testing** untuk perubahan pilihan barang dan perubahan validasi.
+- Dokumentasi dan proses dipetakan ke ISO/IEC/IEEE 29119 berdasarkan artikel pengantar Stuart Reid yang diberikan. Artikel tersebut bukan salinan lengkap standar normatif; repository ini tidak mengklaim sertifikasi atau pemenuhan penuh seluruh standar.
+
+## Ruang lingkup pengujian aktual
+
+1. Halaman login, struktur form, validasi field kosong, login salah, dan login berhasil.
+2. Dashboard, menu navigasi, dan ringkasan sistem.
+3. Stok barang, filter kategori, pencarian, dan reset filter.
+4. Navigasi Permintaan Barang, Barang Masuk, dan Barang Keluar.
+5. Inspeksi form permintaan serta validasi jumlah, pilihan barang, tanggal, dan catatan.
+6. Inspeksi halaman Barang Masuk dan Barang Keluar.
+7. Inspeksi form barang keluar serta validasi jumlah, pilihan barang, tanggal, keterangan, dan batas maksimum stok.
+8. Perubahan pilihan barang dan validasi jumlah setelah pergantian barang.
+
+## Hasil eksekusi historis (23 November 2026)
+
+Eksekusi gabungan pada **23 November 2026** menghasilkan:
+
+| Metrik | Hasil |
+|---|---:|
+| Test yang dikumpulkan pada sesi gabungan | 29 |
+| Passed | 29 |
+| Failed | 0 |
+| Skipped | 0 |
+| Warning pytest | 1 |
+| Durasi | 313,65 detik (5 menit 13,65 detik) |
+
+TC-001 dan TC-002 memiliki hasil PASS dari pengujian terdahulu dan tidak termasuk dalam sesi gabungan 29 test. Bukti screenshot khusus TC-002 belum teridentifikasi. Dengan demikian, 30 test case dalam daftar memiliki catatan PASS, tetapi tidak seluruhnya dieksekusi dalam satu sesi.
+
+Satu warning `PytestRemovedIn10Warning` terkait fixture session-scoped yang didefinisikan sebagai instance method. Warning tidak menyebabkan test gagal dan direkomendasikan untuk diperbaiki.
+
+**Batasan:** pengujian validasi form terutama memeriksa elemen, atribut HTML, dan validitas browser. Hasil ini tidak membuktikan seluruh validasi server, proses penyimpanan database, keamanan menyeluruh, performa, atau kompatibilitas lintas browser.
+
+## Lingkungan pengujian aktual
+
+| Komponen | Detail |
+|---|---|
+| Sistem operasi | Windows (win32) |
+| Terminal | Windows PowerShell |
+| Python | 3.13.7 |
+| pytest | 9.2.0 |
+| pytest-playwright | 0.10.0 |
+| Browser | Chromium |
+| Mode | Headed (`--headed`) |
+| Framework | Playwright + pytest |
+| Direktori lokal pengujian | `C:\xampp\htdocs\tester` |
+
+## Struktur dokumentasi
+
+- [Test Plan](docs/test-plan.md)
+- [Pemetaan metodologi dan ISO/IEC/IEEE 29119](docs/methodology-and-standard.md)
+- [Daftar test case CSV](test-cases/test-cases.csv)
+- [Daftar test case Excel](test-cases/test-cases.xlsx)
+- [Test Execution Report (Markdown)](results/test-execution-report.md)
+- [Test Execution Report (Word)](results/Test_Execution_Report.docx)
+- [Format laporan bug](bug-reports/BUG-TEMPLATE.md)
+- [Pertanyaan wawancara QA](interview/qa-interview-questions.md)
+- [Form validasi QA](interview/qa-validation-template.md)
+- [Regression plan update web 24 November 2026](docs/regression-plan-2026-11-24.md)
+- [Changelog progres](docs/CHANGELOG.md)
+- [Pemeriksaan repository otomatis](scripts/verify_repository.py)
+
+## Evidence
+
+**37 file screenshot PNG sudah tersedia** pada folder [`evidence/`](evidence/) dari arsip yang diterima: 36 menjadi rujukan test case, satu merupakan inspeksi tambahan. Bukti khusus TC-002 masih belum teridentifikasi. Sebelum push ke repo publik, periksa screenshot agar tidak memuat password, token, atau data pribadi.
+
+## Progres pekerjaan
 
 | Kegiatan | Status |
 |---|---|
-| Sesi Playwright, 23 November 2026 | 29 PASS, 0 FAIL, 1 warning |
-| Test case historis | 30 skenario dengan catatan PASS |
-| Pemeriksaan source PHP | Selesai |
-| Black Box manual versi terbaru | NOT RUN |
-| White Box manual versi terbaru | NOT RUN |
-| Regression Testing versi terbaru | NOT RUN |
-| Wawancara QA | Belum dilakukan |
+| Pemilihan website dan objek pengujian | Selesai |
+| Test plan dan acuan dokumentasi | Tersedia |
+| Penyusunan 30 test case sesuai fitur aktual | Selesai dan diselaraskan |
+| Eksekusi gabungan | 29 test: PASS 29, FAIL 0, SKIP 0 |
+| Hasil historis TC-001 dan TC-002 | PASS; TC-002 perlu konfirmasi evidence khusus |
+| Bukti screenshot dalam repository | 37 file PNG tersedia; TC-002 belum memiliki screenshot khusus |
+| Laporan eksekusi | Diperbarui di `results/` |
+| White Box manual | Inspeksi source 28 November: 10 pemeriksaan, 5 temuan |
+| Pengujian server-side, database, performa, dan lintas browser | Belum dicakup secara menyeluruh |
+| Wawancara dan validasi QA profesional | Belum dilakukan |
 
-TC-001 dan TC-002 memiliki hasil dari sesi sebelumnya. Screenshot khusus TC-002 belum tersedia. Hasil Playwright tidak mencakup versi source yang telah diperbaiki.
+## Pembaruan 24 November 2026
 
-## Dokumentasi
-
-| Dokumen | Lokasi |
-|---|---|
-| Rencana pengujian | [Test Plan](docs/test-plan.md) |
-| Metode dan standar | [Metodologi](docs/methodology-and-standard.md) |
-| Skenario manual | [Black Box](docs/manual-test-execution.md) / [White Box](docs/white-box-manual-review.md) |
-| Daftar test case | [Excel](test-cases/test-cases.xlsx) / [CSV](test-cases/test-cases.csv) |
-| Pemetaan kebutuhan | [RTM](docs/requirements-traceability-matrix.md) |
-| Hasil pengujian | [Test Report](results/test-execution-report.md) |
-| Temuan | [Bug Reports](bug-reports/) |
-| Bukti | [Evidence](evidence/) |
-| Evaluasi standar | [ISO 29119](docs/iso-29119-gap-analysis.md) |
-| Wawancara | [QA Interview](interview/qa-interview-questions.md) |
-
-## Instalasi lokal
-
-Source aplikasi, skema database dan data demo tersedia di [cleaning/](cleaning/README.md). Gunakan database dan akun khusus pengujian.
-
-Untuk memeriksa kelengkapan test case dan tautan dokumentasi:
+Repository ini kini memiliki 37 screenshot yang tersedia, 10 rencana regression test tambahan (status **NOT RUN**), dan pemeriksaan otomatis untuk konsistensi file. Jalankan dari root repository:
 
 ```bash
 python scripts/verify_repository.py
 ```
 
+GitHub Actions juga akan menjalankan pemeriksaan yang sama ketika ada push atau pull request. Ini **bukan** pengujian browser otomatis maupun pengujian ulang aplikasi setelah perubahan source.
+
+Source aplikasi Cleaning diperbarui dalam arsip terpisah. Rincian perubahan dan batasan pengujian tersedia di [Changelog](docs/CHANGELOG.md) dan [Regression Plan](docs/regression-plan-2026-11-24.md).
+
 ## Referensi
 
-- ISO/IEC/IEEE 29119-2:2021 – Test processes. https://www.iso.org/standard/79428.html
-- ISO/IEC/IEEE 29119-3:2021 – Test documentation. https://www.iso.org/standard/79429.html
-- ISO/IEC/IEEE 29119-4:2021 – Test techniques. https://www.iso.org/standard/79430.html
-- S. Reid, *ISO/IEC/IEEE 29119: The New International Software Testing Standards*.
+Reid, S. (2013). *ISO/IEC/IEEE 29119: The New International Software Testing Standards* [Artikel PDF yang diberikan].
+
+
+## Pembaruan 28 November 2026 — pengujian lokal
+
+| Kegiatan | Status |
+|---|---|
+| Playwright historis 23 November | 29 PASS, 0 FAIL, 1 warning |
+| Test case historis | 30 skenario dengan catatan PASS |
+| Pemeriksaan source PHP | Selesai; inspeksi White Box tambahan dilakukan |
+| Black Box manual versi terbaru | Belum selesai; 27 pemeriksaan komponen berbantuan script: 25 PASS, 2 FAIL |
+| White Box manual versi terbaru | Review 10 area: 5 sesuai inspeksi, 5 temuan |
+| Regression Testing versi terbaru | Parsial; 10 skenario dipetakan, integrasi MySQL belum |
+| Wawancara QA | Belum dilakukan |
+
+[Report pengujian 28 November](results/2026-11-28/report.md) · [Defect register](bug-reports/defects-2026-11-28.md) · [Status regresi](results/2026-11-28/regression-status.csv).
+
+Pengujian menggunakan source 24 November yang tersedia, bukan bukti deploy versi terbaru pada website produksi. MySQL/mysqli tidak tersedia; 19 HTTP dan 5 DOM menggunakan fixture, 3 HTTP native. Status manual end-to-end belum dapat ditutup. Tidak mengubah hasil historis atau mengklaim wawancara yang belum terjadi.

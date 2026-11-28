@@ -1,0 +1,11 @@
+﻿ID,Status,Actual and scope
+REG-001,PARTIAL,Footer halaman transaksi keluar diperiksa (BB-24–26); dashboard dan halaman lain belum diuji.
+REG-002,PARTIAL,Brand login dan kredit lama diuji offline (BB-23); verifikasi tahun dan browser online belum dilakukan.
+REG-003,PARTIAL,Footer pada 375/768/1280 px sesuai bounding box offline; CSS CDN tidak dimuat; tidak membuktikan seluruh layout.
+REG-004,PARTIAL,"DOM offline: buka, Esc dan klik luar mengubah aria-expanded sesuai BB-27; uji browser online belum."
+REG-005,PARTIAL,Respons registrasi serta parameter INSERT staff sesuai; login dengan akun yang baru dibuat dan persistensi belum.
+REG-006,PARTIAL,Parameter role staff pada request role admin sesuai BB-13; database nyata belum.
+REG-007,PASS,HTTP asli lokal mengembalikan 403 sebelum koneksi database (BB-02).
+REG-008,BLOCKED,"CLI tanpa kredensial ditolak sesuai validasi, tetapi CLI dengan akun valid dan duplikasi perlu MySQL."
+REG-009,PASS (fixture),Sesi login melalui fixture mengalihkan register ke dashboard (BB-14); belum diuji dengan MySQL.
+REG-010,BLOCKED,Belum mengulang TC-001–030 sebagai end-to-end; sebagian perilaku login/validasi diuji komponen. Dua defect masih terbuka.
