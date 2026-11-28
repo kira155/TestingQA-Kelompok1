@@ -23,3 +23,7 @@ Pada tahap ini kami mendokumentasikan tampilan halaman website Cleaning. Bukti b
 - Lanjutkan uji submit form, filter, perubahan stok, pembatasan role, ekspor dan cetak dengan akun serta database uji.
 
 Screenshot ini membuktikan elemen halaman terlihat, bukan bahwa seluruh tombol, transaksi atau hak akses sudah lulus pengujian. Hasil 25 PASS / 2 FAIL dari pengujian komponen sebelumnya tidak berubah. Jangan memakai data operasional untuk pengujian perubahan stok tanpa izin.
+
+## Bukti tambahan
+
+[Lima screenshot filter stok dan logout](stock-filter-review.md) telah dicatat terpisah. Temuan lama belum ditutup.

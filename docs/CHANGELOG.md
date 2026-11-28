@@ -2,6 +2,8 @@
 
 ## 28 November 2026
 
+- Menambahkan lima screenshot filter stok dan logout, serta tiga test case status stok. Tujuh kasus memiliki bukti sebagian.
+
 - Mengganti acuan menjadi ISO/IEC/IEEE 29119-5:2024.
 - Menyusun keyword library, 53 test case manual, langkah dan prosedur. Hasil lama dipertahankan; eksekusi ulang belum dilakukan.
 

@@ -61,8 +61,8 @@ def check():
     library = load_csv('keyword-library.csv')
     case_ids = {x['ID'] for x in cases}
     keywords = {x['Keyword'] for x in library}
-    if len(cases) != 53 or len(case_ids) != 53 or not set(ids).issubset(case_ids):
-        problems.append('Daftar 53 kasus KDT tidak konsisten.')
+    if len(cases) != 56 or len(case_ids) != 56 or not set(ids).issubset(case_ids):
+        problems.append('Daftar 56 kasus KDT tidak konsisten.')
     if len(keywords) != len(library):
         problems.append('Keyword duplikat.')
     for case in cases:
@@ -71,8 +71,10 @@ def check():
             problems.append('Urutan keyword tidak lengkap: ' + case['ID'])
         if not case['Expected_Result'] or not case['Precondition']:
             problems.append('Expected result / precondition kosong: ' + case['ID'])
-        if case['Status'] in {'PASS', 'FAIL'} and not all(case[k] for k in ('Actual_Result', 'Tester', 'Tanggal', 'Bukti_Baru')):
+        if case['Status'] in {'PASS', 'FAIL', 'PARTIAL'} and not all(case[k] for k in ('Actual_Result', 'Tester', 'Tanggal', 'Bukti_Baru')):
             problems.append('Hasil manual belum lengkap: ' + case['ID'])
+        if case['Status'] == 'PARTIAL' and not (ROOT / case['Bukti_Baru']).is_file():
+            problems.append('Bukti parsial hilang: ' + case['ID'])
     if any(x['Keyword'] not in keywords or x['ID'] not in case_ids for x in steps):
         problems.append('Referensi keyword atau ID tidak dikenal.')
     print(f'KDT: {len(cases)} kasus, {len(steps)} langkah, {len(keywords)} keyword')

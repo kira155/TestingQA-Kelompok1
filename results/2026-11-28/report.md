@@ -38,3 +38,5 @@ Beberapa validasi sudah berjalan, tetapi akses pengguna dan proses transaksi mas
 [Catatan teknis dan batasan pengujian](technical-notes.md).
 
 Revisi dokumentasi: acuan ISO/IEC/IEEE 29119-5:2024. Hasil komponen ini adalah hasil historis, tidak dihitung sebagai eksekusi manual KDT. Lihat [kasus baru](../../test-cases/keyword-test-cases.csv).
+
+Update bukti website: [filter stok dan logout](stock-filter-review.md), lima screenshot tambahan. Hasil pengujian komponen tetap 25 PASS / 2 FAIL.

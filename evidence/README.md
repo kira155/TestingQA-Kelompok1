@@ -16,4 +16,6 @@ python scripts/verify_repository.py
 
 ## Screenshot website terbaru
 
-Tersedia [9 screenshot halaman website](2026-11-28/website/) dari 28 November. Nama akun pada gambar baru disamarkan. Screenshot memperlihatkan tampilan halaman, bukan bukti seluruh fungsi berjalan. Lihat [catatan pengecekan](../results/2026-11-28/website-review.md).
+Tersedia [14 screenshot halaman website](2026-11-28/website/) dari 28 November. Nama akun pada gambar baru disamarkan. Screenshot memperlihatkan tampilan halaman, bukan bukti seluruh fungsi berjalan. Lihat [catatan pengecekan](../results/2026-11-28/website-review.md).
+
+Lima tambahan: filter kategori Peralatan, filter Menipis, Cukup, Habis dan logout. Lihat [catatan](../results/2026-11-28/stock-filter-review.md).

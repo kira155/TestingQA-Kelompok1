@@ -34,14 +34,14 @@ Total daftar test case awal adalah 30. Tidak semuanya dijalankan pada sesi Playw
 
 ## Update terakhir
 
-Dari screenshot terbaru, tampilan sembilan halaman sudah didokumentasikan. Ada perbedaan angka stok antarhalaman dan beberapa hal yang perlu dicek ulang. [Catatan screenshot](results/2026-11-28/website-review.md).
+Dari screenshot terbaru, tampilan sembilan halaman dan lima hasil filter/logout sudah didokumentasikan. Ada perbedaan angka stok antarhalaman dan beberapa hal yang perlu dicek ulang. [Catatan screenshot](results/2026-11-28/website-review.md).
 
 Pada pengujian lokal versi 24 November, terdapat dua skenario yang belum sesuai: akses halaman kelola user dan transaksi tanpa sesi login. Dari pengecekan kode, ada tiga risiko tambahan pada proses tambah barang, perubahan stok dan pencocokan permintaan barang.
 
 | Pekerjaan | Status |
 |---|---|
 | Test case awal | 30 skenario tersedia |
-| Black Box manual pada versi terbaru | Dokumentasi tampilan tersedia; uji fungsi belum selesai |
+| Black Box manual pada versi terbaru | Bukti filter dan logout tersedia; uji fungsi belum selesai |
 | White Box (review kode) | 10 pemeriksaan, 5 temuan |
 | Regression testing | Sebagian |
 | Perbaikan bug dan tes ulang | Belum dilakukan |
@@ -62,8 +62,12 @@ Hasil 28 November berasal dari 3 uji HTTP biasa, 19 uji HTTP dengan database sim
 
 ## Revisi acuan 28 November
 
-- [Keyword library](test-cases/keyword-library.csv), [53 test case manual](test-cases/keyword-test-cases.csv), [langkah keyword](test-cases/keyword-steps.csv), dan [test procedure](docs/test-procedures.md).
+- [Keyword library](test-cases/keyword-library.csv), [56 test case manual](test-cases/keyword-test-cases.csv), [langkah keyword](test-cases/keyword-steps.csv), dan [test procedure](docs/test-procedures.md).
 - [Workbook Excel](test-cases/test-cases.xlsx) berisi kasus historis dan lembar KDT baru.
-- 30 kasus awal dan 10 regresi disusun ulang; 9 cek ulang defect dan 4 kasus end-to-end ditambahkan. Semua hasil manual baru masih NOT RUN. Hasil historis tetap dipisahkan.
+- 30 kasus awal, 10 regresi, 9 cek ulang defect, 4 end-to-end dan 3 filter status. Tujuh kasus memiliki bukti sebagian (PARTIAL); 49 belum dijalankan (NOT RUN). Hasil historis tetap dipisahkan.
 
 Acuan: ISO/IEC/IEEE 29119-5:2024, *Software and systems engineering — Software testing — Part 5: Keyword-driven testing*, edisi ke-2, Desember 2024. Acuan yang tersedia adalah preview 14 halaman (sampai klausul 5.2.1). Klausul 6–8 dan lampiran hanya terlihat pada daftar isi. Kelompok menggunakan konsep yang dapat diperiksa pada klausul 3, 4 dan 5; belum mengklaim full maupun tailored conformance karena persyaratan klausul 7 belum dapat diperiksa.
+
+## Cek filter stok dan logout
+
+Lima screenshot tambahan: Peralatan 28, Menipis 13, Cukup 25, Habis 13, dan pesan logout. [Hasil pengamatan dan langkah lanjutan](results/2026-11-28/stock-filter-review.md).

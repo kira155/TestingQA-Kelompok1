@@ -289,3 +289,21 @@ E2E-004,2,BukaHalaman,Dashboard via URL
 E2E-004,3,PeriksaHalaman,Login; redirect
 E2E-004,4,PeriksaHasil,Sesi berakhir; halaman privat mengarah login
 E2E-004,5,SimpanBukti,E2E-004
+ST-001,1,BukaHalaman,Stok Barang
+ST-001,2,PeriksaData,ringkasan sebelum filter; catat jumlah
+ST-001,3,KlikTombol,Menipis
+ST-001,4,PeriksaData,seluruh baris; Menipis; stok 1–4
+ST-001,5,PeriksaHasil,Baris hasil berstatus Menipis; jumlah sesuai ringkasan stok sebelum filter (pada snapshot ini 13).
+ST-001,6,SimpanBukti,ST-001
+ST-002,1,BukaHalaman,Stok Barang
+ST-002,2,PeriksaData,ringkasan sebelum filter; catat jumlah
+ST-002,3,KlikTombol,Cukup
+ST-002,4,PeriksaData,seluruh baris; Cukup; stok di atas 4
+ST-002,5,PeriksaHasil,Baris hasil berstatus Cukup; jumlah sesuai ringkasan stok sebelum filter (pada snapshot ini 25).
+ST-002,6,SimpanBukti,ST-002
+ST-003,1,BukaHalaman,Stok Barang
+ST-003,2,PeriksaData,ringkasan sebelum filter; catat jumlah
+ST-003,3,KlikTombol,Habis
+ST-003,4,PeriksaData,seluruh baris; Habis; stok 0
+ST-003,5,PeriksaHasil,Baris hasil berstatus Habis; jumlah sesuai ringkasan stok sebelum filter (pada snapshot ini 13).
+ST-003,6,SimpanBukti,ST-003

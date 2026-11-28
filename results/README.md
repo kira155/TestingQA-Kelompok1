@@ -6,6 +6,8 @@
 
 Hasil terbaru belum mencakup pengujian manual end-to-end dengan MySQL.
 
-- [28 November 2026 – dokumentasi tampilan website](2026-11-28/website-review.md): sembilan screenshot dan catatan pengecekan lanjutan.
+- [28 November 2026 – dokumentasi tampilan website](2026-11-28/website-review.md): 14 screenshot dan catatan pengecekan lanjutan.
 
-- [Lembar hasil KDT manual](../test-cases/keyword-test-cases.csv): 53 kasus, NOT RUN saat konversi. Isi setelah pengujian manual dilakukan.
+- [Lembar hasil KDT manual](../test-cases/keyword-test-cases.csv): 56 kasus; 7 PARTIAL, 49 NOT RUN. Isi hasil lengkap setelah pengujian manual.
+
+- [Filter stok dan logout](2026-11-28/stock-filter-review.md): lima bukti tambahan.

@@ -12,7 +12,8 @@ Menguji login, hak akses, stok, permintaan, barang masuk/keluar, pengelolaan bar
 | REG | 10 | Regresi perubahan footer, registrasi, navigasi |
 | FU | 9 | Cek ulang D-01 sampai D-09 |
 | E2E | 4 | Alur transaksi, laporan, logout |
-| Total | 53 | Rencana eksekusi manual, belum dijalankan ulang |
+| ST | 3 | Filter status stok |
+| Total | 56 | 7 PARTIAL, 49 NOT RUN |
 
 White Box: 10 pemeriksaan kode yang sudah tercatat, dilaporkan terpisah; lanjutkan uji cabang dengan data uji. Tidak ada klaim coverage kode tanpa pengukuran.
 
@@ -23,7 +24,7 @@ XAMPP/PHP dan MySQL/MariaDB staging, browser desktop dan mobile, akun dummy admi
 Gunakan [library](../test-cases/keyword-library.csv), [kasus](../test-cases/keyword-test-cases.csv), [urutan keyword](../test-cases/keyword-steps.csv) dan [test procedure](test-procedures.md). Prioritaskan akses dan konsistensi stok, kemudian fitur lain. Untuk jumlah barang gunakan variasi kosong, nol, negatif, batas stok dan satu di atas batas. Untuk review kode telusuri kondisi, cabang dan query terkait.
 
 ## Kriteria masuk dan selesai
-Sebelum tes: source dan database uji tersedia, akun diizinkan, kebutuhan/expected result disepakati. Setelah tes: semua kasus dicatat sebagai PASS, FAIL atau BLOCKED dengan actual result dan bukti; temuan dihubungkan ke defect report; uji ulang setelah fix. NOT RUN berarti belum dieksekusi, bukan gagal. Hasil lama dan hasil manual baru dicatat terpisah.
+Sebelum tes: source dan database uji tersedia, akun diizinkan, kebutuhan/expected result disepakati. Setelah tes: semua kasus dicatat sebagai PASS, FAIL atau BLOCKED dengan actual result dan bukti; temuan dihubungkan ke defect report; uji ulang setelah fix. NOT RUN berarti belum dieksekusi, bukan gagal. PARTIAL berarti bukti sebagian tersedia, belum memenuhi seluruh langkah. Hasil lama dan hasil manual baru dicatat terpisah.
 
 ## Pembagian kerja
 Lihat [rencana anggota](pembagian-tugas.md); penugasan dan hasil disetujui masing-masing anggota. Wawancara QA masih belum dilakukan.

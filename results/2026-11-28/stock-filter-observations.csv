@@ -1,0 +1,6 @@
+﻿ID,Keyword,Parameter,Actual_Result,Status_Pengamatan,Cek_Lanjutan,Bukti
+TC-010,PilihOpsi; KlikTombol; PeriksaData,Peralatan,"28 barang, baris terlihat Peralatan",Sesuai pada screenshot,Chemical/Semua dan seluruh baris,evidence/2026-11-28/website/10-filter-peralatan.png
+ST-001,KlikTombol; PeriksaData,Menipis,13 barang; stok terlihat 1–4,Sesuai pada screenshot,Seluruh baris dan perpindahan filter,evidence/2026-11-28/website/11-filter-menipis.png
+ST-002,KlikTombol; PeriksaData,Cukup,25 barang; stok terlihat >4,Sesuai pada screenshot,Seluruh baris dan perpindahan filter,evidence/2026-11-28/website/12-filter-cukup.png
+ST-003,KlikTombol; PeriksaData,Habis,13 barang; stok terlihat 0,Sesuai pada screenshot,Seluruh baris dan perpindahan filter,evidence/2026-11-28/website/13-filter-habis.png
+E2E-004,KeluarAkun; PeriksaHalaman,Logout,Login tampil dengan notifikasi logout,Sesuai pada screenshot,Akses URL dashboard setelah logout,evidence/2026-11-28/website/14-logout.png
